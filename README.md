@@ -95,10 +95,9 @@ So you will have :
 Ready to run for Azure !
 </details>
 
-
-##### Amazon Web Services
-
-From your provider, retrieve the following credentials :
+<details>
+  <summary>Amazon Web Services</summary>
+  From your provider, retrieve the following credentials :
 
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
@@ -112,9 +111,11 @@ So you will have :
 - AWS1_AWS_SECRET_ACCESS_KEY
 
 Ready to run for Amazon Web Services !
+</details>
 
-##### Google Cloud Platform
 
+<details>
+  <summary>Google Cloud Platform</summary>
 From your provider, retrieve the following credentials :
 
 - GOOGLE_PROJECT_ID
@@ -129,9 +130,11 @@ So you will have :
 - GCP1_GOOGLE_APPLICATION_CREDENTIALS
 
 Ready to run for Google Cloud Platform !
+</details>
 
-##### Kubernetes
 
+<details>
+  <summary>Kubernetes</summary>
 From your provider, retrieve the following credentials :
 
 - KUBECONFIG
@@ -144,6 +147,12 @@ So you will have :
 - KUB1_KUBECONFIG
 
 Ready to run for Kubernetes !
+</details>
+
+
+<details>
+  <summary>Github</summary>
+</details>
 
 ##### Github
 
@@ -160,9 +169,17 @@ So you will have :
 
 Ready to run for Kubernetes !
 
+<details>
+  <summary>Helm</summary>
+</details>
+
 ##### Helm
 
 * tuto here *
+
+<details>
+  <summary>Office 365</summary>
+</details>
 
 ##### Office 365
 
