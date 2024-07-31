@@ -25,7 +25,7 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Able to export results & data to DB or others services
 <br/><br/>
 
-<div align="center">
+<div align="center" style="font-size: 24px;">
 ### You like the idea or are using this project ? ⤵️
 ### ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
