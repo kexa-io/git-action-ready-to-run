@@ -1,7 +1,6 @@
 # Ready to Run Kexa Action (Open Source)
 
 <div align="center" id="top">
-
   <a href="https://www.kexa.io/">
     <img src="images/kexa-no-background-color.png" alt="Logo" width="100" height="100">
   </a>
