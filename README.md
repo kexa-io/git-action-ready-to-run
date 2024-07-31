@@ -47,11 +47,10 @@ Simply fork this repository and make it private, or download the content of the 
 * Warning * Do not forget to use this repository as a "PRIVATE" reposiroty, you don't want to use Kexa as a public
 function because it will display some of your resources ID when raising errors for example.
 
-### Step 2
 
 Go into the new repository you just forked or copied.
 
-### Step 3
+### 🔧 Setting Up Addons
 
 Go into "*Settings*", then "*Secrets and variables*", "*Actions*"
 Then you can click and add your credentials, following the instructions
@@ -63,22 +62,6 @@ above for the addon you wish to use.
 <div align="center">
     <img src="readme-images/step2.png" alt="Logo" height="auto">
 </div>
-<div align="center">
-    <img src="readme-images/step3.png" alt="Logo" height="auto">
-</div>
-<div align="center">
-    <img src="readme-images/step4.png" alt="Logo" height="auto">
-</div>
-// Screen shot set credentials & trigger scan -> results //
-
-
-
-
-
-### 🔧 Setting Up Addons
-
-To setup an addon, follow the associated instructions below that will show you how to define credentials for the addon.
-
 
 ##### Azure
 
@@ -109,6 +92,13 @@ To setup an addon, follow the associated instructions below that will show you h
 * tuto here *
 
 ### ⏰ Running & Scheduling
+
+<div align="center">
+    <img src="readme-images/step3.png" alt="Logo" height="auto">
+</div>
+<div align="center">
+    <img src="readme-images/step4.png" alt="Logo" height="auto">
+</div>
 
 **Manual trigger**
 
