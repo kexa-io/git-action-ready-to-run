@@ -24,8 +24,8 @@ This will allow you to scan you cloud environment quickly and schedule scans in 
 - ✅ General optimization
 
 
-All addons are already configured, you juste need to set up the credentials for the one you need.
-If you already set up credentials, go to the next section too see how to run or schedule the scans.
+All addons are already configured, you juste need to set up the credentials for the one you need.<br/>
+If you already set up credentials, go to the next section too see how to run or schedule the scans.<br/>
 <br/><br/>
 
 ### **How can Kexa Action help you ?**
@@ -50,10 +50,10 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 ## 📦 1. Installation
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
-
+<br/>
 * Warning * Do not forget to use this repository as a "*private*" repository, you don't want to use Kexa as a public
 function because it will display some of your resources ID when raising errors for example.
-
+<br/>
 
 Go into the new repository you just forked or copied.
 <br/>
@@ -61,9 +61,9 @@ Go into the new repository you just forked or copied.
 
 ## 🔧 2. Setting Up Addons
 
-Go into "*Settings*", then "*Secrets and variables*", "*Actions*"
+Go into "*Settings*", then "*Secrets and variables*", "*Actions*"<br/>
 Then you can click and add your credentials, following the instructions
-above for the addon you wish to use.
+above for the addon you wish to use.<br/>
 
 <div align="center">
     <img src="readme-images/step1.png" alt="Logo" height="auto">
@@ -152,38 +152,24 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Github</summary>
+
+* tuto here *
 </details>
 
-##### Github
-
-From your provider, retrieve the following credentials :
-
-- KUBECONFIG
-
-Set each variable in your github repository secret with the prefix "KUB1_"
-Prefix is defined in "/config/kube.json" and in "/.github/workflows/kube.yml"
-
-So you will have :
-
-- KUB1_KUBECONFIG
-
-Ready to run for Kubernetes !
 
 <details>
   <summary>Helm</summary>
+  
+* tuto here *
 </details>
 
-##### Helm
-
-* tuto here *
 
 <details>
   <summary>Office 365</summary>
+  
+* tuto here *
 </details>
 
-##### Office 365
-
-* tuto here *
 
 <br/>
 <br/>
@@ -193,12 +179,12 @@ Ready to run for Kubernetes !
 
 **Manual trigger (for testing or one shot scan)**
 
-Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)
+Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)<br/>
 Each addon workflow has a manual trigger, if you want to directly schedule the scan with a date/time or interval,
-please keep reading to the next section 'Scheduled Trigger'.
-
+please keep reading to the next section 'Scheduled Trigger'.<br/>
+<br/>
 For manual trigger, go to "*Actions*" in your repository, and select the workflow from the addon
-you wish to trigger :
+you wish to trigger :<br/>
 
 <div align="center">
     <img src="readme-images/step3.png" alt="Logo" height="auto">
@@ -207,24 +193,26 @@ you wish to trigger :
     <img src="readme-images/step4.png" alt="Logo" height="auto">
 </div>
 
-Tnere is a global workflow to trigger and schedule all addons at once named "kexa.yml"
-This one is just a trigger to call all other workflows.
-
+Tnere is a global workflow to trigger and schedule all addons at once named "kexa.yml"<br/>
+This one is just a trigger to call all other workflows.<br/>
+<br/>
 If you want to try a specific addon manually, click on the workflow from the Github 'Action' page, then
 on "run workflow", and then click on "run workflow" again from the pop-up window.
-
+<br/>
 By triggering the manual option, you can check that your credentials are correct once you've defined them in the Github repository.
 
 <br/><br/>
 
 **Scheduled trigger**
 
-As mentioned before, the "kexa.yml" workflow can trigger all other workflows at a certain date/time or interval.
-
-It is defined in the "kexa.yml" as a cronjob, to know more about how to use and define cronjob, you can refer to this documentation : https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-
+Tnere is a global workflow to trigger and schedule all addons at once named "kexa.yml"<br/>
+This one is just a trigger to call all other workflows.<br/>
+<br/>
+It is defined in the "kexa.yml" as a cronjob, to know more about how to use and define cronjob, you can refer to this documentation :<br/>  https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07 <br/>
+<br/>
 By default, it will trigger every addons every day at 12:00pm.<br/>
-To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you wish
+To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you wish<br/>
+<br/>
 
 <div align="center">
     <img src="readme-images/scheduleStep.png" alt="Logo" height="auto">
