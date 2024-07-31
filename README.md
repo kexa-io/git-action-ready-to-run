@@ -25,10 +25,11 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Able to export results & data to DB or others services
 <br/><br/>
 
+<div align="center">
 ### You like the idea or are using this project ? ⤵️
 ### ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
-
+</div>
 // Screen shot set credentials & trigger scan -> results //
 
 ### **Kexa Git action is currently available for :**
