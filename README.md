@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-<h2>-- Presentation --</h2>
+<h1>─── Presentation ───</h1>
 <br/>
 </div>
 <br/>
@@ -43,7 +43,7 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 </div>
 
 <div align="center">
-<h2>-- How to run --</h2>
+<h1>─── How to run ───</h1>
 </div>
 <br/>
 
