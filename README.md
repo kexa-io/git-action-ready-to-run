@@ -14,7 +14,8 @@ This will allow you to scan you cloud environment quickly and schedule scans in 
 All addons are already configured, you juste need to set up the credentials for the one you need.
 If you already set up credentials, go to the next section too see how to run or schedule the scans.
 
-##### **Kexa Git action is currently available for :**
+<br/><br/>
+### **Kexa Git action is currently available for :**
 
 - ✅ Azure
 - ✅ Amazon Web Services
@@ -25,7 +26,7 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Office 365
 - ☐ Google Workspace (in re-work for git action)
 
-##### **How can Kexa help you ?**
+### **How can Kexa help you ?**
 
 - ✅ Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
 - ✅ Able to export results & data to DB or others services
