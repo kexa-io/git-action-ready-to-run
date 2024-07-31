@@ -9,6 +9,7 @@
 <div align="center">
 <h2>-- Presentation --</h2>
 </div>
+<br/>
 
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
@@ -37,12 +38,13 @@ If you already set up credentials, go to the next section too see how to run or 
 <h2>
 You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on the core project Kexa : https://github.com/4urcloud/Kexa ⭐
 </h2>
-<br/><br/>
+<br/>
 </div>
 
 <div align="center">
 <h2>-- How to run --</h2>
 </div>
+<br/>
 
 ### 📦 1. Installation
 
@@ -53,6 +55,7 @@ function because it will display some of your resources ID when raising errors f
 
 
 Go into the new repository you just forked or copied.
+<br/>
 
 ### 🔧 2. Setting Up Addons
 
@@ -69,23 +72,88 @@ above for the addon you wish to use.
 
 ##### Azure
 
-* tuto here *
+From your provider, retrieve the following credentials :
+
+- AZURECLIENTID
+- AZURECLIENTSECRET
+- AZURETENANTID
+- SUBSCRIPTIONID
+
+Set each variable in your github repository secret with the prefix "AZ1_"
+Prefix is defined in "/config/azure.json"
+
+So you will have :
+
+- AZ1_AZURECLIENTID
+- AZ1_AZURECLIENTSECRET
+- AZ1_AZURETENANTID
+- AZ1_SUBSCRIPTIONID
+
+Ready to run for Azure !
 
 ##### Amazon Web Services
 
-* tuto here *
+From your provider, retrieve the following credentials :
+
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+
+Set each variable in your github repository secret with the prefix "AWS1_"
+Prefix is defined in "/config/aws.json"
+
+So you will have :
+
+- AWS1_AWS_ACCESS_KEY_ID
+- AWS1_AWS_SECRET_ACCESS_KEY
+
+Ready to run for Amazon Web Services !
 
 ##### Google Cloud Platform
 
-* tuto here *
+From your provider, retrieve the following credentials :
+
+- GOOGLE_PROJECT_ID
+- GOOGLE_APPLICATION_CREDENTIALS
+
+Set each variable in your github repository secret with the prefix "GCP1_"
+Prefix is defined in "/config/gcp.json" and in "/.github/workflows/gcp.yml"
+
+So you will have :
+
+- GCP1_GOOGLE_PROJECT_ID
+- GCP1_GOOGLE_APPLICATION_CREDENTIALS
+
+Ready to run for Google Cloud Platform !
 
 ##### Kubernetes
 
-* tuto here *
+From your provider, retrieve the following credentials :
+
+- KUBECONFIG
+
+Set each variable in your github repository secret with the prefix "KUB1_"
+Prefix is defined in "/config/kube.json" and in "/.github/workflows/kube.yml"
+
+So you will have :
+
+- KUB1_KUBECONFIG
+
+Ready to run for Kubernetes !
 
 ##### Github
 
-* tuto here *
+From your provider, retrieve the following credentials :
+
+- KUBECONFIG
+
+Set each variable in your github repository secret with the prefix "KUB1_"
+Prefix is defined in "/config/kube.json" and in "/.github/workflows/kube.yml"
+
+So you will have :
+
+- KUB1_KUBECONFIG
+
+Ready to run for Kubernetes !
 
 ##### Helm
 
@@ -94,6 +162,8 @@ above for the addon you wish to use.
 ##### Office 365
 
 * tuto here *
+
+<br/>
 
 ### ⏰ 3. Running & Scheduling
 
@@ -128,7 +198,11 @@ It is defined in the "kexa.yml" as a cronjob, to know more about how to use and 
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
+<br/>
+
 ### 🎯 4. Expected Results
+
+<br/>
 
 ### 🛠️ 5. More configuration options
 
@@ -137,6 +211,8 @@ This is just a quick launch repository, but below there is some additionals conf
 without having to read the Kexa core documentation.
 
 To have more advanced options and editing tutorial, refer to the core project documentation.
+
+<br/>
 
 ##### Enabling / Disabling rules, Editing & Error levels
 
