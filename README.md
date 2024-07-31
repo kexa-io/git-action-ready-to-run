@@ -6,7 +6,9 @@
   </a>
 </div>
 
-## -- Presentation --
+<div align="center">
+<h2>-- Presentation --</h2>
+</div>
 
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
@@ -38,7 +40,9 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 <br/><br/>
 </div>
 
-## -- How to run --
+<div align="center">
+<h2>-- How to run --</h2>
+</div>
 
 ### 📦 1. Installation
 
