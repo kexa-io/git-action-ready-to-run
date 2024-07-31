@@ -57,6 +57,7 @@ function because it will display some of your resources ID when raising errors f
 
 Go into the new repository you just forked or copied.
 <br/>
+<br/>
 
 ### 🔧 2. Setting Up Addons
 
@@ -164,6 +165,7 @@ Ready to run for Kubernetes !
 
 * tuto here *
 
+<br/>
 <br/>
 
 ### ⏰ 3. Running & Scheduling
