@@ -23,7 +23,7 @@ Kexa Git action is currently available for :
 - [x] Github
 - [x] Helm
 - [x] Office 365
-- [] Google Workspace (in re-work for git action)
+- [ ] Google Workspace (in re-work for git action)
 
 How do Kexa help you ?
 
