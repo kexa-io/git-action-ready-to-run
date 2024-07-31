@@ -2,6 +2,7 @@
 
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
+<br/><br/>
 
 ### This can help you ensure :
 - ✅ Security
@@ -25,14 +26,18 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Helm
 - ✅ Office 365
 - ☐ Google Workspace (in re-work for git action)
+<br/><br/>
 
 ### **How can Kexa help you ?**
 
 - ✅ Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
 - ✅ Able to export results & data to DB or others services
+<br/><br/>
 
 You like the idea or are using this project ? ⤵️
 ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
+<br/><br/>
+<br/><br/>
 
 ### Installation
 
