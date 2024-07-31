@@ -1,6 +1,6 @@
 # Ready to Run Kexa Action (Open Source)
 
-## Presentation
+## 1. Presentation
 
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
@@ -25,7 +25,7 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Able to export results & data to DB or others services
 <br/><br/>
 
-<div align="center" style="font-size: 24px;">
+<div align="center">
 <h2>
 You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on the core project Kexa : https://github.com/4urcloud/Kexa ⭐
 </h2>
@@ -46,7 +46,7 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 <br/><br/>
 <br/><br/>
 
-## How to run
+## 2. How to run
 
 ### Installation
 
@@ -142,6 +142,6 @@ To know more about how to use those channels :
 
 ##### Using multiple subscriptions/projects for a provider
 
-### Going further with Kexa
+## 3. Going further with Kexa
 
 This repository is a easy to launch demo of the Kexa script running in Github action, to refer to the core project and the full documentation, follow this link : https://github.com/4urcloud/Kexa
