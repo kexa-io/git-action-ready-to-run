@@ -179,10 +179,14 @@ Ready to run for Kubernetes !
 
 ## ⏰ 3. Running & Scheduling
 
+<br/><br/>
+
 <div align="center">
+<h3>
 
 **Manual trigger (for testing or one shot scan)**
 
+</h3>
 </div>
 <br/>
 
@@ -208,9 +212,11 @@ By triggering the manual option, you can check that your credentials are correct
 
 <br/><br/>
 <div align="center">
+<h3>
 
 **Scheduled trigger**
 
+</h3>
 </div>
 <br/>
 
