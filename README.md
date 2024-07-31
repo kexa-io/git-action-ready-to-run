@@ -4,11 +4,11 @@
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
 
 This can help you ensure :
-- [x] Security
-- [x] Compliance
-- [x] Costs saving
-- [x] Alerting of errors or issues
-- [x] General optimization
+- ✅ Security
+- ✅ Compliance
+- ✅ Costs saving
+- ✅ Alerting of errors or issues
+- ✅ General optimization
 
 
 All addons are already configured, you juste need to set up the credentials for the one you need.
@@ -16,19 +16,19 @@ If you already set up credentials, go to the next section too see how to run or 
 
 Kexa Git action is currently available for :
 
-- [x] Azure
-- [x] Amazon Web Services
-- [x] Google Cloud Platform
-- [x] Kubernetes
-- [x] Github
-- [x] Helm
-- [x] Office 365
+- ✅ Azure
+- ✅ Amazon Web Services
+- ✅ Google Cloud Platform
+- ✅ Kubernetes
+- ✅ Github
+- ✅ Helm
+- ✅ Office 365
 - [ ] Google Workspace (in re-work for git action)
 
 How do Kexa help you ?
 
-- [x] Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
-- [x] Able to export results & data to DB or others services
+- ✅ Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
+- ✅ Able to export results & data to DB or others services
 
 You like the idea or are using this project ? ⤵️
 ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
