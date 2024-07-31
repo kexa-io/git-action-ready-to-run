@@ -26,8 +26,8 @@ If you already set up credentials, go to the next section too see how to run or 
 <br/><br/>
 
 <div align="center" style="font-size: 24px;">
-### You like the idea or are using this project ? ⤵️
-### ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
+You like the idea or are using this project ? ⤵️
+⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
 </div>
 // Screen shot set credentials & trigger scan -> results //
