@@ -16,6 +16,18 @@ All addons are already configured, you juste need to set up the credentials for 
 If you already set up credentials, go to the next section too see how to run or schedule the scans.
 
 <br/><br/>
+
+### **How can Kexa Action help you ?**
+
+- ✅ Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
+- ✅ Easy-to-run & deploy, no costs
+- ✅ Able to export results & data to DB or others services
+<br/><br/>
+
+You like the idea or are using this project ? ⤵️
+⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
+<br/><br/>
+
 ### **Kexa Git action is currently available for :**
 
 - ✅ Azure
@@ -26,16 +38,6 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Helm
 - ✅ Office 365
 - ☐ Google Workspace (in re-work for git action)
-<br/><br/>
-
-### **How can Kexa help you ?**
-
-- ✅ Alerting by Github action logs, MS Teams channel, Email, ... (see section here)
-- ✅ Able to export results & data to DB or others services
-<br/><br/>
-
-You like the idea or are using this project ? ⤵️
-⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
 <br/><br/>
 
