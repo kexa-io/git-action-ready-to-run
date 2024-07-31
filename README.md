@@ -167,16 +167,22 @@ Ready to run for Kubernetes !
 
 ### ⏰ 3. Running & Scheduling
 
+
+**Manual trigger (for testing or one shot scan)**
+
+Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)
+Each addon workflow has a manual trigger, if you want to directly schedule the scan with a date/time or interval,
+please keep reading to the next section 'Scheduled Trigger'.
+
+For manual trigger, go to "*Actions*" in your repository, and select the workflow from the addon
+you wish to trigger :
+
 <div align="center">
     <img src="readme-images/step3.png" alt="Logo" height="auto">
 </div>
 <div align="center">
     <img src="readme-images/step4.png" alt="Logo" height="auto">
 </div>
-
-**Manual trigger**
-
-Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)
 
 Tnere is a global workflow to trigger and schedule all addons at once named "kexa.yml"
 This one is just a trigger to call all other workflows.
