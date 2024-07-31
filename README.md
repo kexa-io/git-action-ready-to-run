@@ -7,7 +7,8 @@
 </div>
 
 <div align="center">
-<h2>-- Presentation --</h2>
+<h1>─── Presentation ───</h1>
+<br/>
 </div>
 <br/>
 
@@ -42,7 +43,7 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 </div>
 
 <div align="center">
-<h2>-- How to run --</h2>
+<h1>─── How to run ───</h1>
 </div>
 <br/>
 
@@ -50,11 +51,12 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
 
-* Warning * Do not forget to use this repository as a "PRIVATE" reposiroty, you don't want to use Kexa as a public
+* Warning * Do not forget to use this repository as a "*private*" repository, you don't want to use Kexa as a public
 function because it will display some of your resources ID when raising errors for example.
 
 
 Go into the new repository you just forked or copied.
+<br/>
 <br/>
 
 ### 🔧 2. Setting Up Addons
@@ -163,6 +165,7 @@ Ready to run for Kubernetes !
 
 * tuto here *
 
+<br/>
 <br/>
 
 ### ⏰ 3. Running & Scheduling
