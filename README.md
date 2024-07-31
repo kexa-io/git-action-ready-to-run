@@ -14,7 +14,6 @@ This will allow you to scan you cloud environment quickly and schedule scans in 
 
 All addons are already configured, you juste need to set up the credentials for the one you need.
 If you already set up credentials, go to the next section too see how to run or schedule the scans.
-
 <br/><br/>
 
 ### **How can Kexa Action help you ?**
@@ -24,8 +23,8 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Able to export results & data to DB or others services
 <br/><br/>
 
-You like the idea or are using this project ? ⤵️
-⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
+####You like the idea or are using this project ? ⤵️
+####⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
 
 ### **Kexa Git action is currently available for :**
