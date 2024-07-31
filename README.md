@@ -213,9 +213,9 @@ This one is just a trigger to call all other workflows.
 If you want to try a specific addon manually, click on the workflow from the Github 'Action' page, then
 on "run workflow", and then click on "run workflow" again from the pop-up window.
 
-/// SCREEN SHOT HERE ///
-
 By triggering the manual option, you can check that your credentials are correct once you've defined them in the Github repository.
+
+<br/><br/>
 
 **Scheduled trigger**
 
@@ -223,7 +223,12 @@ As mentioned before, the "kexa.yml" workflow can trigger all other workflows at 
 
 It is defined in the "kexa.yml" as a cronjob, to know more about how to use and define cronjob, you can refer to this documentation : https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
 
-// SCREEN SHOT HERE //
+By default, it will trigger every addons every day at 12:00pm.<br/>
+To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you wish
+
+<div align="center">
+    <img src="readme-images/scheduleStep.png" alt="Logo" height="auto">
+</div>
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
