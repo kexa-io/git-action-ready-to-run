@@ -47,7 +47,7 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 </div>
 <br/>
 
-### 📦 1. Installation
+## 📦 1. Installation
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
 
@@ -59,7 +59,7 @@ Go into the new repository you just forked or copied.
 <br/>
 <br/>
 
-### 🔧 2. Setting Up Addons
+## 🔧 2. Setting Up Addons
 
 Go into "*Settings*", then "*Secrets and variables*", "*Actions*"
 Then you can click and add your credentials, following the instructions
@@ -188,7 +188,7 @@ Ready to run for Kubernetes !
 <br/>
 <br/>
 
-### ⏰ 3. Running & Scheduling
+## ⏰ 3. Running & Scheduling
 
 
 **Manual trigger (for testing or one shot scan)**
@@ -229,11 +229,11 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 
 <br/>
 
-### 🎯 4. Expected Results
+## 🎯 4. Expected Results
 
 <br/>
 
-### 🛠️ 5. More configuration options
+## 🛠️ 5. More configuration options
 
 Kexa git action is based on the core project Kexa : https://github.com/4urcloud/Kexa/
 This is just a quick launch repository, but below there is some additionals configuration you can set
@@ -261,11 +261,19 @@ To know more about how to use those channels :
 
 ##### Using multiple subscriptions/projects for a provider
 
-## 3. Going further with Kexa
+<div align="center">
+<h1>─── Going further with Kexa ───</h1>
+<br/>
+</div>
+<br/>
 
 This repository is a easy to launch demo of the Kexa script running in Github action, to refer to the core project and the full documentation, follow this link : https://github.com/4urcloud/Kexa
 
-## **Kexa Git action is currently available for :**
+<div align="center">
+<h1>─── Kexa Git action is currently available for ───</h1>
+<br/>
+</div>
+<br/>
 
 - ✅ Azure
 - ✅ Amazon Web Services
