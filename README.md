@@ -3,7 +3,7 @@
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
 
-#####This can help you ensure :
+##### This can help you ensure :
 - ✅ Security
 - ✅ Compliance
 - ✅ Costs saving
