@@ -6,7 +6,7 @@
   </a>
 </div>
 
-## 1. Presentation
+## -- Presentation --
 
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
@@ -38,9 +38,9 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 <br/><br/>
 </div>
 
-## 2. How to run
+## -- How to run --
 
-### 📦 Installation
+### 📦 1. Installation
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
 
@@ -50,7 +50,7 @@ function because it will display some of your resources ID when raising errors f
 
 Go into the new repository you just forked or copied.
 
-### 🔧 Setting Up Addons
+### 🔧 2. Setting Up Addons
 
 Go into "*Settings*", then "*Secrets and variables*", "*Actions*"
 Then you can click and add your credentials, following the instructions
@@ -91,7 +91,7 @@ above for the addon you wish to use.
 
 * tuto here *
 
-### ⏰ Running & Scheduling
+### ⏰ 3. Running & Scheduling
 
 <div align="center">
     <img src="readme-images/step3.png" alt="Logo" height="auto">
@@ -124,9 +124,9 @@ It is defined in the "kexa.yml" as a cronjob, to know more about how to use and 
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
-### 🎯 Expected Results
+### 🎯 4. Expected Results
 
-### 🛠️ More configuration options
+### 🛠️ 5. More configuration options
 
 Kexa git action is based on the core project Kexa : https://github.com/4urcloud/Kexa/
 This is just a quick launch repository, but below there is some additionals configuration you can set
