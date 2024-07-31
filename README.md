@@ -2,7 +2,7 @@
 
 <div align="center" id="top">
   <a href="https://www.kexa.io/">
-    <img src="images/kexa-no-background-color.png" alt="Logo" width="100" height="100">
+    <img src="readme-images/kexa-no-background-color.png" alt="Logo" width="100" height="100">
   </a>
 </div>
 
@@ -54,14 +54,14 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 
 ## 2. How to run
 
-### Installation
+### 📦 Installation
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
 
 * Warning * Do not forget to use this repository as a "PRIVATE" reposiroty, you don't want to use Kexa as a public
 function because it will display some of your resources ID when raising errors for example.
 
-### Setting Up Addons
+### 🔧 Setting Up Addons
 
 To setup an addon, follow the associated instructions below that will show you how to define credentials for the addon.
 
@@ -94,7 +94,7 @@ To setup an addon, follow the associated instructions below that will show you h
 
 * tuto here *
 
-### Running & Scheduling
+### ⏰ Running & Scheduling
 
 **Manual trigger**
 
@@ -120,9 +120,9 @@ It is defined in the "kexa.yml" as a cronjob, to know more about how to use and 
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
-### Expected Results
+### 🎯 Expected Results
 
-### More configuration options
+### 🛠️ More configuration options
 
 Kexa git action is based on the core project Kexa : https://github.com/4urcloud/Kexa/
 This is just a quick launch repository, but below there is some additionals configuration you can set
