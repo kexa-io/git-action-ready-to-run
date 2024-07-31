@@ -38,6 +38,24 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 <br/><br/>
 </div>
 
+## 2. How to run
+
+### 📦 Installation
+
+Simply fork this repository and make it private, or download the content of the repository and make it private
+
+* Warning * Do not forget to use this repository as a "PRIVATE" reposiroty, you don't want to use Kexa as a public
+function because it will display some of your resources ID when raising errors for example.
+
+### Step 2
+
+Go into the new repository you just forked or copied.
+
+### Step 3
+
+Go into "*Settings*", then "*Secrets and variables*", "*Actions*"
+Then you can click and add your credentials, following the instructions
+above for the addon you wish to use.
 
 <div align="center">
     <img src="readme-images/step1.png" alt="Logo" height="auto">
@@ -53,27 +71,9 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 </div>
 // Screen shot set credentials & trigger scan -> results //
 
-### **Kexa Git action is currently available for :**
 
-- ✅ Azure
-- ✅ Amazon Web Services
-- ✅ Google Cloud Platform
-- ✅ Kubernetes
-- ✅ Github
-- ✅ Helm
-- ✅ Office 365
-- ☐ Google Workspace (in re-work for git action)
-<br/><br/>
-<br/><br/>
 
-## 2. How to run
 
-### 📦 Installation
-
-Simply fork this repository and make it private, or download the content of the repository and make it private
-
-* Warning * Do not forget to use this repository as a "PRIVATE" reposiroty, you don't want to use Kexa as a public
-function because it will display some of your resources ID when raising errors for example.
 
 ### 🔧 Setting Up Addons
 
@@ -165,3 +165,16 @@ To know more about how to use those channels :
 ## 3. Going further with Kexa
 
 This repository is a easy to launch demo of the Kexa script running in Github action, to refer to the core project and the full documentation, follow this link : https://github.com/4urcloud/Kexa
+
+## **Kexa Git action is currently available for :**
+
+- ✅ Azure
+- ✅ Amazon Web Services
+- ✅ Google Cloud Platform
+- ✅ Kubernetes
+- ✅ Github
+- ✅ Helm
+- ✅ Office 365
+- ☐ Google Workspace (in re-work for git action)
+<br/><br/>
+<br/><br/>
