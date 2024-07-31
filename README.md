@@ -72,6 +72,9 @@ above for the addon you wish to use.<br/>
     <img src="readme-images/step2.png" alt="Logo" height="auto">
 </div>
 
+<br/>
+<br/>
+
 <details>
   <summary>Azure</summary>
   
@@ -179,7 +182,7 @@ Ready to run for Kubernetes !
 
 **Manual trigger (for testing or one shot scan)**
 
-Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)<br/>
+Every addon has its associated workflow. (example : for Azure there is azure.yml, AWS there is aws.yml)<br/><br/>
 Each addon workflow has a manual trigger, if you want to directly schedule the scan with a date/time or interval,
 please keep reading to the next section 'Scheduled Trigger'.<br/>
 <br/>
@@ -189,16 +192,14 @@ you wish to trigger :<br/>
 <div align="center">
     <img src="readme-images/step3.png" alt="Logo" height="auto">
 </div>
+<br/><br/>
+Then you can click on "run workflow", and then click on "run workflow" again from the pop-up window.
+<br/><br/>
 <div align="center">
     <img src="readme-images/step4.png" alt="Logo" height="auto">
 </div>
 
-Tnere is a global workflow to trigger and schedule all addons at once named "kexa.yml"<br/>
-This one is just a trigger to call all other workflows.<br/>
-<br/>
-If you want to try a specific addon manually, click on the workflow from the Github 'Action' page, then
-on "run workflow", and then click on "run workflow" again from the pop-up window.
-<br/>
+<br/><br/>
 By triggering the manual option, you can check that your credentials are correct once you've defined them in the Github repository.
 
 <br/><br/>
