@@ -239,6 +239,8 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 
 ## 🎯 4. Expected Results
 
+
+Teams, Email, SaaS, SMS
 <br/>
 
 ## 🛠️ 5. More configuration options
