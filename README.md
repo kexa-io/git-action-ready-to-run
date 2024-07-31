@@ -27,6 +27,8 @@ If you already set up credentials, go to the next section too see how to run or 
 #### ⭐ Please star us on the core Open Source project Kexa : https://github.com/4urcloud/Kexa
 <br/><br/>
 
+// Screen shot set credentials & trigger scan -> results //
+
 ### **Kexa Git action is currently available for :**
 
 - ✅ Azure
