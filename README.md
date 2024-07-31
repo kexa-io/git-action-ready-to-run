@@ -23,7 +23,7 @@ If you already set up credentials, go to the next section too see how to run or 
 - ✅ Github
 - ✅ Helm
 - ✅ Office 365
-- [ ] Google Workspace (in re-work for git action)
+- ☐ Google Workspace (in re-work for git action)
 
 **How can Kexa help you ?**
 
