@@ -1,5 +1,7 @@
 # Ready to Run Kexa Action (Open Source)
 
+## Presentation
+
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
 <br/><br/>
@@ -41,6 +43,8 @@ If you already set up credentials, go to the next section too see how to run or 
 - ☐ Google Workspace (in re-work for git action)
 <br/><br/>
 <br/><br/>
+
+## How to run
 
 ### Installation
 
