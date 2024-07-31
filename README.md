@@ -216,7 +216,7 @@ To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you
 <br/>
 
 <div align="center">
-    <img src="readme-images/scheduleStep.png" alt="Logo" height="auto">
+    <img src="readme-images/stepSchedule.png" alt="Logo" height="auto">
 </div>
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
