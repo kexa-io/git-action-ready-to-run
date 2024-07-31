@@ -72,6 +72,29 @@ above for the addon you wish to use.
     <img src="readme-images/step2.png" alt="Logo" height="auto">
 </div>
 
+<details>
+  <summary>Azure</summary>
+  
+From your provider, retrieve the following credentials :
+
+- AZURECLIENTID
+- AZURECLIENTSECRET
+- AZURETENANTID
+- SUBSCRIPTIONID
+
+Set each variable in your github repository secret with the prefix "AZ1_"
+Prefix is defined in "/config/azure.json"
+
+So you will have :
+
+- AZ1_AZURECLIENTID
+- AZ1_AZURECLIENTSECRET
+- AZ1_AZURETENANTID
+- AZ1_SUBSCRIPTIONID
+
+Ready to run for Azure !
+</details>
+
 ##### Azure
 
 From your provider, retrieve the following credentials :
