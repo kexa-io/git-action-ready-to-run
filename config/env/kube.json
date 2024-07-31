@@ -1,0 +1,11 @@
+{
+    "kubernetes":[
+        {
+            "description": "Kubernetes unique Scan",
+            "prefix": "KUB1_",
+            "rules": [
+                "kubernetesTestRules"
+            ]
+        }
+    ]
+}

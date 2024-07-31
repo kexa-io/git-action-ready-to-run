@@ -1,0 +1,32 @@
+name: Azure Kexa Action
+#on:
+#  schedule:
+#    - cron: '0 8 * * *'   # every day at 8 am
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Kexa Action
+        uses: 4urcloud/Kexa_githubAction@1.7.3
+        id: kexa
+        with:
+          ENV_VARS: |
+            AZ1_AZURECLIENTID=${{ secrets.AZ1_AZURECLIENTID }}
+            AZ1_AZURECLIENTSECRET=${{ secrets.AZ1_AZURECLIENTSECRET }}
+            AZ1_AZURETENANTID=${{ secrets.AZ1_AZURETENANTID }}
+            AZ1_SUBSCRIPTIONID=${{ secrets.AZ1_SUBSCRIPTIONID }}
+            MYOWNRULES="./rules"
+            NODE_CONFIG_TS_ENV=azure
+
+      - name: Check Kexa Action Result
+        if: steps.kexa.outcome != 'success'
+        run: |
+          echo "Kexa Action failed with exit code $?. Exiting..."
+          exit 1

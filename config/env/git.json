@@ -1,0 +1,11 @@
+{ 
+    "github": [
+        {
+            "description": "Github Scan",
+            "prefix": "GH1_",
+            "rules": [
+                "githubTestRules"
+            ]
+        }
+    ]
+}

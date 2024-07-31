@@ -1,0 +1,18 @@
+{
+    "gcp": [
+        {
+            "description": "GCP 1 Scan",
+            "prefix": "GCP1_",
+            "rules": [
+                "gcpTestRules"
+            ]
+        },
+        {
+            "description": "GCP 2 Scan",
+            "prefix": "GCP2_",
+            "rules": [
+                "gcpTestRules"
+            ]
+        }
+    ]
+}

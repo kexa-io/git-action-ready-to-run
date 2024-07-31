@@ -1,0 +1,18 @@
+{
+    "kubernetes":[
+        {
+            "description": "Kubernetes 1 Scan",
+            "prefix": "KUB1_",
+            "rules": [
+                "kubernetesTestRules"
+            ]
+        },
+        {
+            "description": "Kubernetes 2 Scan",
+            "prefix": "KUB2_",
+            "rules": [
+                "kubernetesTestRules"
+            ]
+        }
+    ]
+}

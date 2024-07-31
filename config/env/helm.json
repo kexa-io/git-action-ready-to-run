@@ -1,0 +1,11 @@
+{
+    "helm":[
+        {
+            "description": "Helm Scan",
+            "prefix": "KUB1_",
+            "rules": [
+                "helmTestRules"
+            ]
+        }
+    ]
+}

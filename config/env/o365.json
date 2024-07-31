@@ -1,0 +1,11 @@
+{
+    "azure":[
+        {
+            "description": "Azure Scan",
+            "prefix": "AZ1_",
+            "rules": [
+                "o365TestRules"
+            ]
+        }
+    ]
+}

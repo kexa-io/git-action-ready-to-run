@@ -1,0 +1,14 @@
+{
+    "http": [
+        {
+            "description": "organization Scan",
+            "prefix":"HTTP1_",
+            "rules": [
+                "httpTestRules"
+            ],
+            "URL": [
+                "https://www.google.com"
+            ]
+        }
+    ]
+}

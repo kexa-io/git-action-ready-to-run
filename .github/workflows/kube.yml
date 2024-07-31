@@ -1,0 +1,29 @@
+name: Kubernetes Kexa Action
+#on:
+#  schedule:
+#    - cron: '30 8 * * *'   # every day at 8:30 am
+on:
+  workflow_dispatch:
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Kexa Action
+        uses: 4urcloud/Kexa_githubAction@1.7.3
+        id: kexa
+        with:
+          ENV_VARS: |
+            MYOWNRULES="./rules"
+            NODE_CONFIG_TS_ENV=kube
+          KUBECONFIG: ${{ secrets.KUB1_KUBECONFIG }}
+          KUBEPREFIX: "KUB1_"
+      - name: Check Kexa Action Result
+        if: steps.kexa.outcome != 'success'
+        run: |
+          echo "Kexa Action failed with exit code $?. Exiting..."
+          exit 1

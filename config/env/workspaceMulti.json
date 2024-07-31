@@ -1,0 +1,18 @@
+{
+    "googleWorkspace":[
+        {
+            "description": "Workspace 1 Scan",
+            "prefix": "GW1_",
+            "rules": [
+                "googleWorkspaceTestRules"
+            ]
+        },
+        {
+            "description": "Workspace 2 Scan",
+            "prefix": "GW2_",
+            "rules": [
+                "googleWorkspaceTestRules"
+            ]
+        }
+    ]
+}

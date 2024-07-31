@@ -1,0 +1,29 @@
+name: Git Kexa Action
+#on:
+#  schedule:
+#    - cron: '15 8 * * *'   # every day at 8:15 am
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Kexa Action
+        uses: 4urcloud/Kexa_githubAction@1.7.3
+        id: kexa
+        with:
+          ENV_VARS: |
+            GH1_GITHUBTOKEN=${{ secrets.GH1_GITHUBTOKEN }}
+            MYOWNRULES="./rules"
+            NODE_CONFIG_TS_ENV=git
+
+      - name: Check Kexa Action Result
+        if: steps.kexa.outcome != 'success'
+        run: |
+          echo "Kexa Action failed with exit code $?. Exiting..."
+          exit 1

@@ -1,0 +1,30 @@
+name: AWS Kexa Action
+#on:
+#  schedule:
+#    - cron: '05 8 * * *'   # every day at 8:05 am
+on:
+  workflow_dispatch:
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Kexa Action
+        uses: 4urcloud/Kexa_githubAction@1.7.3
+        id: kexa
+        with:
+          ENV_VARS: |
+            AWS1_AWS_ACCESS_KEY_ID=${{ secrets.AWS1_AWS_ACCESS_KEY_ID }}
+            AWS1_AWS_SECRET_ACCESS_KEY=${{ secrets.AWS1_AWS_SECRET_ACCESS_KEY }}
+            MYOWNRULES="./rules"
+            NODE_CONFIG_TS_ENV=aws
+
+      - name: Check Kexa Action Result
+        if: steps.kexa.outcome != 'success'
+        run: |
+          echo "Kexa Action failed with exit code $?. Exiting..."
+          exit 1

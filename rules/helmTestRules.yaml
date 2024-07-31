@@ -1,0 +1,58 @@
+- version: 1.0.0
+  date: 07-18-2023
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        - teams
+      to:
+        - 'https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/f0d7214387c147899bdd61e847866e67/9bb0a529-c19a-478f-afd3-04a338037922'
+    error:
+      enabled: true
+      type: 
+        - log
+        #- teams
+      to: 
+        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- teams
+      to:
+        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+    global:
+      enabled: true
+      type: 
+        - log
+        - teams
+      to: 
+        - 'https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/f0d7214387c147899bdd61e847866e67/9bb0a529-c19a-478f-afd3-04a338037922'
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    - name: "Is Helm addon working in Action"
+      description : "This rule must raise an info alert if the Helm addon is working"
+      applied: true
+      level: 0
+      cloudProvider: helm
+      objectName : chart
+      conditions:
+        - property : details.revisions
+          condition : SUP_OR_EQUAL
+          value : 1000000

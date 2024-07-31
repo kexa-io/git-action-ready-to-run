@@ -1,0 +1,31 @@
+name: GCP Kexa Action
+#on:
+#  schedule:
+#    - cron: '10 8 * * *'   # every day at 8:10 am
+on:
+  workflow_dispatch:
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Kexa Action
+        uses: 4urcloud/Kexa_githubAction@1.7.3
+        id: kexa
+        with:
+          ENV_VARS: |
+            GCP1_GOOGLE_PROJECT_ID=${{ secrets.GCP1_GOOGLE_PROJECT_ID }}
+            MYOWNRULES="./rules"
+            NODE_CONFIG_TS_ENV=gcp
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP1_GOOGLE_APPLICATION_CREDENTIALS }}
+          GOOGLE_APPLICATION_CREDENTIALS_PREFIX: "GCP1_"
+
+      - name: Check Kexa Action Result
+        if: steps.kexa.outcome != 'success'
+        run: |
+          echo "Kexa Action failed with exit code $?. Exiting..."
+          exit 1

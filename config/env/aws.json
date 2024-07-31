@@ -1,0 +1,11 @@
+{
+    "aws": [
+        {
+            "description": "AWS Scan",
+            "prefix": "AWS1_",
+            "rules": [
+                "awsTestRules"
+            ]
+        }
+    ]
+}
