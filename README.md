@@ -40,16 +40,16 @@ You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on
 
 
 <div align="center">
-    <img src="readme-images/step1.png" alt="Logo" width="100" height="auto">
+    <img src="readme-images/step1.png" alt="Logo" height="auto">
 </div>
 <div align="center">
-    <img src="readme-images/step2.png" alt="Logo" width="100" height="auto">
+    <img src="readme-images/step2.png" alt="Logo" height="auto">
 </div>
 <div align="center">
-    <img src="readme-images/step3.png" alt="Logo" width="100" height="auto">
+    <img src="readme-images/step3.png" alt="Logo" height="auto">
 </div>
 <div align="center">
-    <img src="readme-images/step4.png" alt="Logo" width="100" height="auto">
+    <img src="readme-images/step4.png" alt="Logo" height="auto">
 </div>
 // Screen shot set credentials & trigger scan -> results //
 
