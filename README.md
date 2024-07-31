@@ -1,5 +1,12 @@
 # Ready to Run Kexa Action (Open Source)
 
+<div align="center" id="top">
+
+  <a href="https://www.kexa.io/">
+    <img src="images/kexa-no-background-color.png" alt="Logo" width="100" height="100">
+  </a>
+</div>
+
 ## 1. Presentation
 
 **🚀 This is a repository ready to use for Kexa Github action.**
