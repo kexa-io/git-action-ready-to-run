@@ -1,4 +1,6 @@
+<div align="center" id="top">
 # Ready to Run Kexa Action (Open Source)
+</div>
 
 <div align="center" id="top">
   <a href="https://www.kexa.io/">
