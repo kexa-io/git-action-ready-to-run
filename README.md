@@ -15,6 +15,8 @@
 </div>
 <br/>
 
+Free & Quick scan of your cloud environments for different providers & services
+
 **🚀 This is a repository ready to use for Kexa Github action.**
 This will allow you to scan you cloud environment quickly and schedule scans in Git Action.
 <br/><br/>
