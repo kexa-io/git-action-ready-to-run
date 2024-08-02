@@ -98,23 +98,23 @@ above for the addon you wish to use.<br/>
 <br/>
 From your provider, retrieve the following credentials :<br/><br/>
 
-- AZURECLIENTID
-- AZURECLIENTSECRET
-- AZURETENANTID
-- SUBSCRIPTIONID
+- *AZURECLIENTID*
+- *AZURECLIENTSECRET*
+- *AZURETENANTID*
+- *SUBSCRIPTIONID*
 
-Set each variable in your github repository secret with the prefix "AZ1_"
-Prefix is defined in "/config/azure.json"
+Set each variable in your github repository secret with the prefix "*AZ1_*"
+Prefix is defined in "*/config/azure.json*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
 
-- AZ1_AZURECLIENTID
-- AZ1_AZURECLIENTSECRET
-- AZ1_AZURETENANTID
-- AZ1_SUBSCRIPTIONID
+- *AZ1_AZURECLIENTID*
+- *AZ1_AZURECLIENTSECRET*
+- *AZ1_AZURETENANTID*
+- *AZ1_SUBSCRIPTIONID*
 
-Ready to run for Azure !
+**Ready to run for Azure !**
 <br/>
 <div align="center">
   <h3>
@@ -137,19 +137,19 @@ Ready to run for Azure !
 <br/>
   From your provider, retrieve the following credentials :<br/><br/>
 
-- AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
+- *AWS_ACCESS_KEY_ID*
+- *AWS_SECRET_ACCESS_KEY*
 
-Set each variable in your github repository secret with the prefix "AWS1_"
-Prefix is defined in "/config/aws.json"
+Set each variable in your github repository secret with the prefix "*AWS1_*"
+Prefix is defined in "*/config/aws.json*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
 
-- AWS1_AWS_ACCESS_KEY_ID
-- AWS1_AWS_SECRET_ACCESS_KEY
+- *AWS1_AWS_ACCESS_KEY_ID*
+- *AWS1_AWS_SECRET_ACCESS_KEY*
 
-Ready to run for Amazon Web Services !
+**Ready to run for Amazon Web Services !**
 <br/>
 <div align="center">
   <h3>
@@ -173,19 +173,19 @@ Ready to run for Amazon Web Services !
 <br/>
 From your provider, retrieve the following credentials :<br/><br/>
 
-- GOOGLE_PROJECT_ID
-- GOOGLE_APPLICATION_CREDENTIALS
+- *GOOGLE_PROJECT_ID*
+- *GOOGLE_APPLICATION_CREDENTIALS*
 
-Set each variable in your github repository secret with the prefix "GCP1_"
-Prefix is defined in "/config/gcp.json" and in "/.github/workflows/gcp.yml"
+Set each variable in your github repository secret with the prefix "*GCP1_*"
+Prefix is defined in "*/config/gcp.json*" and in "*/.github/workflows/gcp.yml*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
 
-- GCP1_GOOGLE_PROJECT_ID
-- GCP1_GOOGLE_APPLICATION_CREDENTIALS
+- *GCP1_GOOGLE_PROJECT_ID*
+- *GCP1_GOOGLE_APPLICATION_CREDENTIALS*
 
-Ready to run for Google Cloud Platform !
+**Ready to run for Google Cloud Platform !**
 <br/>
 <div align="center">
   <h3>
@@ -209,17 +209,17 @@ Ready to run for Google Cloud Platform !
 <br/>
 From your provider, retrieve the following credentials :<br/><br/>
 
-- KUBECONFIG
+- *KUBECONFIG*
 
-Set each variable in your github repository secret with the prefix "KUB1_"
-Prefix is defined in "/config/kube.json" and in "/.github/workflows/kube.yml"
+Set each variable in your github repository secret with the prefix "*KUB1_*"
+Prefix is defined in "*/config/kube.json*" and in "*/.github/workflows/kube.yml*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
 
-- KUB1_KUBECONFIG
+- *KUB1_KUBECONFIG*
 
-Ready to run for Kubernetes !
+**Ready to run for Kubernetes !**
 <br/>
 <div align="center">
   <h3>
