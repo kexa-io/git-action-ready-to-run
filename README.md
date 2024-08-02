@@ -390,7 +390,7 @@ If you want to use another notification channel than "*log*", refer to the next 
 Using this github action, you can simply check the logs by going in 'Actions' and clicking on the associated workflow 'Azure Kexa Action'.
 <br/>
 You will see the list of alerts with the level, resources ID and rule name and description.
-<br/>
+<br/><br/>
 <div align="center">
     <img src="readme-images/expected_results_1.png" alt="Logo" height="auto">
 </div>
@@ -403,7 +403,7 @@ By setting up 'teams' notifications, you will get a team card in the channel whe
 To configure this, refer to the next section.
 <br/>
 This card will resume the scan results, with all rules that raised an error, with associated resources ID and important informations for remediation.
-<br/>
+<br/><br/>
 <div align="center">
     <img src="readme-images/expect_teams_2-removebg-preview.png" alt="Logo" height="400">
 </div>
@@ -416,7 +416,7 @@ SaaS has been developed but is not yet available, it will allow you to visualize
 browse a rules catalog, use the rule editor.
 <br/>
 If this interest you, please contact us at contact@4urcloud.eu
-<br/>
+<br/><br/>
 <div align="center">
     <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
 </div>
@@ -425,6 +425,28 @@ If this interest you, please contact us at contact@4urcloud.eu
 <br/>
 
 ## 🛠️ 5. More configuration options
+
+<br/>
+
+### Teams notifications
+
+To enable teams notification, open the rule file you want to be notified of.<br/>
+For example, in this repository, the Azure addon is using the "/rules/azureSetRules.yaml" file to scan.<br/>
+<br/>
+Open this file and in the notification section (at the top-level of the file), add "teams" value in the "type" field.
+And add your teams channel webhook in the corresponding "to" field
+<br/>
+To get your teams channel webhook : https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet
+<br/>
+You can now set this configuration for each level alert in this file, (you can just set it in the global if you just want global notification).
+<br/><br/>
+IMAGE
+<br/><br/>
+That's it you're ready to get notified !
+<br/>
+<br/>
+
+### More channels
 
 Kexa git action is based on the core project Kexa : https://github.com/4urcloud/Kexa/
 This is just a quick launch repository, but below there is some additionals configuration you can set
