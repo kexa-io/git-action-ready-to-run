@@ -440,7 +440,9 @@ To get your teams channel webhook : https://learn.microsoft.com/en-us/microsoftt
 <br/>
 You can now set this configuration for each level alert in this file, (you can just set it in the global if you just want global notification).
 <br/><br/>
-IMAGE
+<div align="center">
+    <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
+</div>
 <br/><br/>
 That's it you're ready to get notified !
 <br/>
