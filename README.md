@@ -315,7 +315,7 @@ credentials as values:
 <div align="center">
 <h3>
 
-**Manual trigger (for testing or one shot scan)**
+**Option 1 : Manual trigger (for testing or one shot scan)**
 
 </h3>
 </div>
@@ -345,7 +345,7 @@ By triggering the manual option, you can check that your credentials are correct
 <div align="center">
 <h3>
 
-**Scheduled trigger**
+**Option 2 : Scheduled trigger**
 
 </h3>
 </div>
