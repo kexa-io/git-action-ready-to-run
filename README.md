@@ -42,12 +42,13 @@ If you already set up credentials, go to the next section too see how to run or 
 
 <div align="center">
 <h2>
-You like the idea or are using this project ? ⤵️ <br/> ⭐ Please star us on the core project Kexa : https://github.com/4urcloud/Kexa ⭐
+You like the idea or are using this project ? <br/> ⭐ Please star us on the core project Kexa : https://github.com/4urcloud/Kexa ⭐
 </h2>
 <br/>
 </div>
 
 <div align="center">
+<h1>👨‍💻</h1>
 <h1>─── How to run ───</h1>
 </div>
 <br/>
