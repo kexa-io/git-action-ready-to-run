@@ -479,6 +479,27 @@ If this interest you, please contact us at contact@4urcloud.eu
 
 <br/>
 
+### Enable/Disable rule & Set Alert level 
+
+Each rule can be individually disabled, and set to an alert level.<br/>
+Here is kexa alert level :<br/>
+- 0: Info
+- 1: Warning
+- 2: Error
+- 3: Fatal
+<br/><br/>
+To edit the alert level or disable/enable a rule, go to the rule file
+(for example: "rules/AzureAllRules.yaml"), search for the rule you want to modify.
+<br/><br/>
+Then you can edit the following field as you wish:
+<br/><br/>
+<div align="center">
+    <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
+</div>
+
+<br/>
+<br/>
+
 ### Teams notifications
 
 To enable teams notification, open the rule file you want to be notified of.<br/>
@@ -492,7 +513,7 @@ To get your teams channel webhook : https://learn.microsoft.com/en-us/microsoftt
 You can now set this configuration for each level alert in this file, (you can just set it in the global if you just want global notification).
 <br/><br/>
 <div align="center">
-    <img src="readme-images/webhook_rule.png" alt="Logo" height="auto">
+    <img src="readme-images/editrule.png" alt="Logo" height="auto">
 </div>
 <br/><br/>
 That's it you're ready to get notified !
