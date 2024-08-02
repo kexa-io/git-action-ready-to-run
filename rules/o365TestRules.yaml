@@ -1,5 +1,5 @@
 - version: 1.0.0
-  date: 07-18-2023
+  date: 08-02-2024
   alert:
     fatal:
       enabled: true
