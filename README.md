@@ -63,6 +63,7 @@ function because it will display some of your resources ID when raising errors f
 Go into the new repository you just forked or copied.
 <br/>
 <br/>
+<br/>
 
 ## 🔧 2. Setting Up Addons
 
@@ -186,6 +187,7 @@ Ready to run for Kubernetes !
 
 <br/>
 <br/>
+<br/>
 
 ## ⏰ 3. Running & Scheduling
 
@@ -245,6 +247,8 @@ To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
+<br/>
+<br/>
 <br/>
 
 ## 🎯 4. Expected Results
