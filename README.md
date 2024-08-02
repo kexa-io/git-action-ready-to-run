@@ -494,7 +494,7 @@ To edit the alert level or disable/enable a rule, go to the rule file
 Then you can edit the following field as you wish:
 <br/><br/>
 <div align="center">
-    <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
+    <img src="readme-images/editrule.png" alt="Logo" height="auto">
 </div>
 
 <br/>
@@ -513,7 +513,7 @@ To get your teams channel webhook : https://learn.microsoft.com/en-us/microsoftt
 You can now set this configuration for each level alert in this file, (you can just set it in the global if you just want global notification).
 <br/><br/>
 <div align="center">
-    <img src="readme-images/editrule.png" alt="Logo" height="auto">
+    <img src="readme-images/webhook_rule.png" alt="Logo" height="auto">
 </div>
 <br/><br/>
 That's it you're ready to get notified !
