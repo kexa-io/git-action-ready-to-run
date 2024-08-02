@@ -106,7 +106,8 @@ From your provider, retrieve the following credentials :<br/><br/>
 Set each variable in your github repository secret with the prefix "AZ1_"
 Prefix is defined in "/config/azure.json"
 
-So you will have :
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
 
 - AZ1_AZURECLIENTID
 - AZ1_AZURECLIENTSECRET
@@ -142,7 +143,8 @@ Ready to run for Azure !
 Set each variable in your github repository secret with the prefix "AWS1_"
 Prefix is defined in "/config/aws.json"
 
-So you will have :
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
 
 - AWS1_AWS_ACCESS_KEY_ID
 - AWS1_AWS_SECRET_ACCESS_KEY
@@ -177,7 +179,8 @@ From your provider, retrieve the following credentials :<br/><br/>
 Set each variable in your github repository secret with the prefix "GCP1_"
 Prefix is defined in "/config/gcp.json" and in "/.github/workflows/gcp.yml"
 
-So you will have :
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
 
 - GCP1_GOOGLE_PROJECT_ID
 - GCP1_GOOGLE_APPLICATION_CREDENTIALS
@@ -211,7 +214,8 @@ From your provider, retrieve the following credentials :<br/><br/>
 Set each variable in your github repository secret with the prefix "KUB1_"
 Prefix is defined in "/config/kube.json" and in "/.github/workflows/kube.yml"
 
-So you will have :
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
 
 - KUB1_KUBECONFIG
 
