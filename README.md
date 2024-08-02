@@ -210,7 +210,7 @@ credentials as values:
 <br/>
 From your provider, retrieve the following credentials :<br/><br/>
 
-- *KUBECONFIG*
+- *KUBECONFIG* (content of ".kube/config")
 
 Set each variable in your github repository secret with the prefix "*KUB1_*"
 Prefix is defined in "*/config/kube.json*" and in "*/.github/workflows/kube.yml*"
@@ -219,6 +219,8 @@ So you will have in your github secrets the following variable with the correspo
 credentials as values:
 
 - *KUB1_KUBECONFIG*
+
+For Kubernetes, you need to pass the content of your ".kube/config" directly in the Github secret value.
 
 **Ready to run for Kubernetes !**
 <br/>
@@ -281,7 +283,7 @@ instead of the prefix and name. It will take the current permissions on reposiro
 <br/>
 From your provider, retrieve the following credentials :<br/><br/>
 
-- *KUBECONFIG*
+- *KUBECONFIG* (content of ".kube/config")
 
 Set each variable in your github repository secret with the prefix "*KUB1_*"
 Prefix is defined in "*/config/helm.json*" and in "*/.github/workflows/helm.yml*"
@@ -290,6 +292,8 @@ So you will have in your github secrets the following variable with the correspo
 credentials as values:
 
 - *KUB1_KUBECONFIG*
+
+For Helm, you need to pass the content of your ".kube/config" directly in the Github secret value.
 
 **Ready to run for Helm !**
 <br/>
