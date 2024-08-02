@@ -67,7 +67,7 @@ Go into the new repository you just forked or copied.
 ## 🔧 2. Setting Up Addons
 
 
-#### **Adding credentials for a providers**
+### **Adding credentials for a providers**
 
 Go into "*Settings*", then "*Secrets and variables*", "*Actions*"<br/>
 Then you can click and add your credentials, following the instructions
@@ -83,7 +83,7 @@ above for the addon you wish to use.<br/>
 <br/>
 <br/>
 
-#### **Required credentials per provider**
+### **Required credentials per provider**
 
 <details>
   <summary>Azure</summary>
