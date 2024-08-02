@@ -4,14 +4,14 @@
             "description": "GCP 1 Scan",
             "prefix": "GCP1_",
             "rules": [
-                "gcpTestRules"
+                "gcpAllRules"
             ]
         },
         {
             "description": "GCP 2 Scan",
             "prefix": "GCP2_",
             "rules": [
-                "gcpTestRules"
+                "gcpAllRules"
             ]
         }
     ]

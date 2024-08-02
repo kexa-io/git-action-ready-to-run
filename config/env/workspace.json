@@ -4,7 +4,7 @@
             "description": "Workspace Scan",
             "prefix": "GW1_",
             "rules": [
-                "googleWorkspaceTestRules"
+                "googleWorkspaceAllRules"
             ]
         }
     ]
