@@ -376,6 +376,7 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 ### Github Action Logs
 
 <br/>
+<br/>
 <div align="center">
     <img src="readme-images/expected_results_1.png" alt="Logo" height="auto">
 </div>
@@ -385,7 +386,7 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 
 <br/>
 <div align="center">
-    <img src="readme-images/expect_teams_2.png" alt="Logo" height="300">
+    <img src="readme-images/expect_teams_2.png" alt="Logo" height="400">
 </div>
 <br/>
 
