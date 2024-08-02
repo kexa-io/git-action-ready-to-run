@@ -363,6 +363,7 @@ To change this, open "/.github/workflows/kexa.yml" and change the cronjob as you
 <div align="center">
     <img src="readme-images/stepSchedule.png" alt="Logo" height="auto">
 </div>
+<br/>
 
 You can also use services like https://crontab.guru/ or https://crontab-generator.org/ that will help you write the cronjob you need.
 
@@ -398,7 +399,8 @@ You will see the list of alerts with the level, resources ID and rule name and d
 ### Microsoft Teams
 
 <br/>
-By setting up 'teams' notifications, you will get a team card in the channel where you set up the webhook.
+By setting up 'teams' notifications, you will get a team card in the channel where you set up the webhook.<br/>
+To configure this, refer to the next section.
 <br/>
 This card will resume the scan results, with all rules that raised an error, with associated resources ID and important informations for remediation.
 <br/>
@@ -418,6 +420,7 @@ If this interest you, please contact us at contact@4urcloud.eu
 <div align="center">
     <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
 </div>
+<br/>
 <br/>
 <br/>
 
