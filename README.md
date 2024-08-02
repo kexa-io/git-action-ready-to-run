@@ -385,7 +385,7 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 
 <br/>
 <div align="center">
-    <img src="readme-images/expect_teams_2.png" alt="Logo" height="auto">
+    <img src="readme-images/expect_teams_2.png" alt="Logo" height="300">
 </div>
 <br/>
 
