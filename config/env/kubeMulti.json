@@ -4,14 +4,14 @@
             "description": "Kubernetes 1 Scan",
             "prefix": "KUB1_",
             "rules": [
-                "kubernetesTestRules"
+                "kubernetesAllRules"
             ]
         },
         {
             "description": "Kubernetes 2 Scan",
             "prefix": "KUB2_",
             "rules": [
-                "kubernetesTestRules"
+                "kubernetesAllRules"
             ]
         }
     ]
