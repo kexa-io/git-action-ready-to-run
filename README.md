@@ -114,6 +114,14 @@ So you will have :
 - AZ1_SUBSCRIPTIONID
 
 Ready to run for Azure !
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 <details>
@@ -140,6 +148,14 @@ So you will have :
 - AWS1_AWS_SECRET_ACCESS_KEY
 
 Ready to run for Amazon Web Services !
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
@@ -167,6 +183,14 @@ So you will have :
 - GCP1_GOOGLE_APPLICATION_CREDENTIALS
 
 Ready to run for Google Cloud Platform !
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
@@ -192,6 +216,14 @@ So you will have :
 - KUB1_KUBECONFIG
 
 Ready to run for Kubernetes !
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
@@ -207,6 +239,15 @@ Ready to run for Kubernetes !
 <br/>
 
 * tuto here *
+
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
@@ -222,6 +263,15 @@ Ready to run for Kubernetes !
 <br/>
   
 * tuto here *
+
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
@@ -237,6 +287,15 @@ Ready to run for Kubernetes !
 <br/>
   
 * tuto here *
+
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
 </details>
 
 
