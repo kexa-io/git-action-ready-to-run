@@ -88,7 +88,9 @@ above for the addon you wish to use.<br/>
 <br/>
 <details>
   <summary>Azure</summary>
-  
+<br/><br/>
+───────── Azure ─────────
+<br/>
 From your provider, retrieve the following credentials :
 
 - AZURECLIENTID
@@ -111,6 +113,9 @@ Ready to run for Azure !
 
 <details>
   <summary>Amazon Web Services</summary>
+<br/><br/>
+───────── Amazon Web Services ─────────
+<br/>
   From your provider, retrieve the following credentials :
 
 - AWS_ACCESS_KEY_ID
@@ -130,6 +135,9 @@ Ready to run for Amazon Web Services !
 
 <details>
   <summary>Google Cloud Platform</summary>
+<br/><br/>
+───────── Google Cloud Platform ─────────
+<br/>
 From your provider, retrieve the following credentials :
 
 - GOOGLE_PROJECT_ID
@@ -149,6 +157,9 @@ Ready to run for Google Cloud Platform !
 
 <details>
   <summary>Kubernetes</summary>
+<br/><br/>
+───────── Kubernetes ─────────
+<br/>
 From your provider, retrieve the following credentials :
 
 - KUBECONFIG
@@ -166,6 +177,9 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Github</summary>
+<br/><br/>
+───────── Github ─────────
+<br/>
 
 * tuto here *
 </details>
@@ -173,6 +187,9 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Helm</summary>
+<br/><br/>
+───────── Helm ─────────
+<br/>
   
 * tuto here *
 </details>
@@ -180,6 +197,9 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Office 365</summary>
+<br/><br/>
+───────── Office 365 ─────────
+<br/>
   
 * tuto here *
 </details>
