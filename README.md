@@ -96,7 +96,7 @@ above for the addon you wish to use.<br/>
   </h3>
 </div>
 <br/>
-From your provider, retrieve the following credentials :<br/>
+From your provider, retrieve the following credentials :<br/><br/>
 
 - AZURECLIENTID
 - AZURECLIENTSECRET
@@ -134,7 +134,7 @@ Ready to run for Azure !
   </h3>
 </div>
 <br/>
-  From your provider, retrieve the following credentials :<br/>
+  From your provider, retrieve the following credentials :<br/><br/>
 
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
@@ -169,7 +169,7 @@ Ready to run for Amazon Web Services !
   </h3>
 </div>
 <br/>
-From your provider, retrieve the following credentials :<br/>
+From your provider, retrieve the following credentials :<br/><br/>
 
 - GOOGLE_PROJECT_ID
 - GOOGLE_APPLICATION_CREDENTIALS
@@ -204,7 +204,7 @@ Ready to run for Google Cloud Platform !
   </h3>
 </div>
 <br/>
-From your provider, retrieve the following credentials :<br/>
+From your provider, retrieve the following credentials :<br/><br/>
 
 - KUBECONFIG
 
