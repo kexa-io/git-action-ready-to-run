@@ -373,7 +373,29 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 ## 🎯 4. Expected Results
 
 
-Teams, Email, SaaS, SMS
+### Github Action Logs
+
+<br/>
+<div align="center">
+    <img src="readme-images/expected_results_1.png" alt="Logo" height="auto">
+</div>
+<br/>
+
+### Microsoft Teams
+
+<br/>
+<div align="center">
+    <img src="readme-images/expect_teams_2.png" alt="Logo" height="auto">
+</div>
+<br/>
+
+### Kexa SAAS (no public release yet)
+
+<br/>
+<div align="center">
+    <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
+</div>
+<br/>
 <br/>
 
 ## 🛠️ 5. More configuration options
