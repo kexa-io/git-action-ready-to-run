@@ -242,9 +242,22 @@ credentials as values:
   </h3>
 </div>
 <br/>
+From your provider, retrieve the following credentials :<br/><br/>
 
-* tuto here *
+- *GITHUBTOKEN*
 
+Set each variable in your github repository secret with the prefix "*GH1_*"
+Prefix is defined in "*/config/git.json*".
+
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
+
+- *GH1_GITHUBTOKEN*
+
+Or else, for the Github addon you can just change the secret name by "GITHUBTOKEN"
+instead of the prefix and name. It will take the current permissions on reposiroty.
+
+**Ready to run for Github !**
 <br/>
 <div align="center">
   <h3>
@@ -266,9 +279,19 @@ credentials as values:
   </h3>
 </div>
 <br/>
-  
-* tuto here *
+From your provider, retrieve the following credentials :<br/><br/>
 
+- *KUBECONFIG*
+
+Set each variable in your github repository secret with the prefix "*KUB1_*"
+Prefix is defined in "*/config/helm.json*" and in "*/.github/workflows/helm.yml*"
+
+So you will have in your github secrets the following variable with the corresponding
+credentials as values:
+
+- *KUB1_KUBECONFIG*
+
+**Ready to run for Helm !**
 <br/>
 <div align="center">
   <h3>
