@@ -1,5 +1,5 @@
 - version: 1.0.0
-  date: 07-18-2023
+  date: 08-02-2024
   alert:
     fatal:
       enabled: true
@@ -7,35 +7,35 @@
         - log
         - teams
       to:
-        - 'https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/f0d7214387c147899bdd61e847866e67/9bb0a529-c19a-478f-afd3-04a338037922'
+        - 'XXXXXXXXXXXXXXXXXx'
     error:
       enabled: true
       type: 
         - log
         #- teams
       to: 
-        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+        - 'XXXXXXXXXXXXXXXXXx'
     warning:
       enabled: true
       type: 
         - log
         #- teams
       to:
-        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+        - 'XXXXXXXXXXXXXXXXXx'
     info:
       enabled: true
       type: 
         - log
         #- email
       to: 
-        #- https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/e8d3300b8ec142f59c144d7ec028e7d5/9bb0a529-c19a-478f-afd3-04a338037922
+        - 'XXXXXXXXXXXXXXXXXx'
     global:
       enabled: true
       type: 
         - log
         - teams
       to: 
-        - 'https://innovtecheu.webhook.office.com/webhookb2/d1e6f097-8ece-4b79-9b18-a4d1e2f005e1@e17d1063-88c2-4368-9d08-203b84a1bb40/IncomingWebhook/f0d7214387c147899bdd61e847866e67/9bb0a529-c19a-478f-afd3-04a338037922'
+        - 'XXXXXXXXXXXXXXXXXx'
       conditions:
         - level: 0
           min: 1
