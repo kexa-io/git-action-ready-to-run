@@ -158,7 +158,12 @@ Ready to run for Google Cloud Platform !
 <details>
   <summary>Kubernetes</summary>
 <br/><br/>
-───────── Kubernetes ─────────
+<div align="center">
+  <h3>
+
+  **───────── Kubernetes ─────────** 
+  </h3>
+</div>
 <br/>
 From your provider, retrieve the following credentials :
 
