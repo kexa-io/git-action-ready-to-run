@@ -376,15 +376,17 @@ You can also use services like https://crontab.guru/ or https://crontab-generato
 By default, the "*log*" option is activated, so you will have your results in your
 Github action logs.
 <br/>
+<br/>
 This section will show you a few example of expected results with explanations.
 <br/>
 If you want to use another notification channel than "*log*", refer to the next section.
+<br/>
 <br/>
 
 ### Github Action Logs
 
 <br/>
-Using this github action, you can simply check the logs by going in "*Actions*" and clicking on the associated workflow "Azure Kexa Action".
+Using this github action, you can simply check the logs by going in 'Actions' and clicking on the associated workflow 'Azure Kexa Action'.
 <br/>
 You will see the list of alerts with the level, resources ID and rule name and description.
 <br/>
@@ -396,7 +398,7 @@ You will see the list of alerts with the level, resources ID and rule name and d
 ### Microsoft Teams
 
 <br/>
-By setting up "*teams*" notifications, you will get a team card in the channel where you set up the webhook.
+By setting up 'teams' notifications, you will get a team card in the channel where you set up the webhook.
 <br/>
 This card will resume the scan results, with all rules that raised an error, with associated resources ID and important informations for remediation.
 <br/>
@@ -411,7 +413,7 @@ This card will resume the scan results, with all rules that raised an error, wit
 SaaS has been developed but is not yet available, it will allow you to visualize your results and resources, having an history of your previous scan with statistics,
 browse a rules catalog, use the rule editor.
 <br/>
-If this interest you, please contact us at **contact@4urcloud.eu**
+If this interest you, please contact us at contact@4urcloud.eu
 <br/>
 <div align="center">
     <img src="readme-images/expected_saas-removebg-preview.png" alt="Logo" height="auto">
