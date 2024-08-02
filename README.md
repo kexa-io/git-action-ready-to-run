@@ -88,8 +88,13 @@ above for the addon you wish to use.<br/>
 <br/>
 <details>
   <summary>Azure</summary>
-<br/><br/>
-───────── Azure ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Azure ─────────** 
+  </h3>
+</div>
 <br/>
 From your provider, retrieve the following credentials :
 
@@ -113,8 +118,13 @@ Ready to run for Azure !
 
 <details>
   <summary>Amazon Web Services</summary>
-<br/><br/>
-───────── Amazon Web Services ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Amazon Web Services ─────────** 
+  </h3>
+</div>
 <br/>
   From your provider, retrieve the following credentials :
 
@@ -135,8 +145,13 @@ Ready to run for Amazon Web Services !
 
 <details>
   <summary>Google Cloud Platform</summary>
-<br/><br/>
-───────── Google Cloud Platform ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Google Cloud Platform ─────────** 
+  </h3>
+</div>
 <br/>
 From your provider, retrieve the following credentials :
 
@@ -157,7 +172,7 @@ Ready to run for Google Cloud Platform !
 
 <details>
   <summary>Kubernetes</summary>
-<br/><br/>
+<br/>
 <div align="center">
   <h3>
 
@@ -182,8 +197,13 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Github</summary>
-<br/><br/>
-───────── Github ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Github ─────────** 
+  </h3>
+</div>
 <br/>
 
 * tuto here *
@@ -192,8 +212,13 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Helm</summary>
-<br/><br/>
-───────── Helm ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Helm ─────────** 
+  </h3>
+</div>
 <br/>
   
 * tuto here *
@@ -202,8 +227,13 @@ Ready to run for Kubernetes !
 
 <details>
   <summary>Office 365</summary>
-<br/><br/>
-───────── Office 365 ─────────
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── Office 365 ─────────** 
+  </h3>
+</div>
 <br/>
   
 * tuto here *
