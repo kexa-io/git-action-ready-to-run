@@ -55,6 +55,7 @@ You like the idea or are using this project ? <br/> ⭐ Please star us on the co
 
 Simply fork this repository and make it private, or download the content of the repository and make it private
 <br/>
+
 ❗ Warning : Do not forget to use this repository as a "*private*" repository, you don't want to use Kexa as a public
 function because it will display some of your resources ID when raising errors for example.
 <br/>
