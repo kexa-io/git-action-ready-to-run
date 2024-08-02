@@ -233,6 +233,30 @@ For Kubernetes, you need to pass the content of your ".kube/config" directly in 
 <br/>
 </details>
 
+<details>
+  <summary>HTTP</summary>
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── HTTP ─────────** 
+  </h3>
+</div>
+<br/>
+
+See specific configuration for HTTP : https://github.com/4urcloud/Kexa/blob/main/documentation/provider/HTTP.md
+
+**Ready to run for HTTP !**
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
+</details>
+
 
 <details>
   <summary>Github</summary>
