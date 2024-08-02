@@ -84,7 +84,8 @@ above for the addon you wish to use.<br/>
 <br/>
 
 ### **Required credentials per provider**
-
+*click one to expand and see details*
+<br/>
 <details>
   <summary>Azure</summary>
   
