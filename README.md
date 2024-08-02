@@ -73,7 +73,7 @@ Go into the new repository you just forked or copied.
 Go into "*Settings*", then "*Secrets and variables*", "*Actions*"<br/>
 Then you can click and add your credentials, following the instructions
 above for the addon you wish to use.<br/>
-
+<br/>
 <div align="center">
     <img src="readme-images/step1.png" alt="Logo" height="auto">
 </div>
@@ -327,7 +327,7 @@ please keep reading to the next section 'Scheduled Trigger'.<br/>
 <br/>
 For manual trigger, go to "*Actions*" in your repository, and select the workflow from the addon
 you wish to trigger :<br/>
-
+<br/>
 <div align="center">
     <img src="readme-images/step3.png" alt="Logo" height="auto">
 </div>
