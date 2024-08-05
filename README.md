@@ -508,8 +508,9 @@ project you can choose which rule files (in "*/rules/*") to use defined as a lis
 
 For example, here we are using "*awsS3*", "*awsEC2*" and "*awsIAM*" files for the AWS addon in "*/config/env/aws.json*"
 
-SCREEN SHOT HERE
-
+<div align="center">
+    <img src="readme-images/aws_config.png" alt="Logo" height="auto">
+</div>
 
 <br/>
 <br/>
