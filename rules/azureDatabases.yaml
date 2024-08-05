@@ -1,0 +1,159 @@
+- version: 1.0.0
+  date: 08-02-2024
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    error:
+      enabled: true
+      type: 
+        - log
+        #- email
+        #- sms
+      to: 
+        - myEmail@gmail.com
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        - myEmail@gmail.com
+    global:
+      enabled: true
+      type: 
+        - log
+        #- webhook
+        #- sms
+        #- email
+      to: 
+        #- http://127.0.0.1:5000/test
+        - myEmail@gmail.com
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    - name: "azure-sql-server-firewall-any-ip"
+      description: "this rule is to ensure SQL servers firewall does not allow any IP"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlServers
+      conditions:
+      - operator: OR
+        criteria:
+          - property: 'publicNetworkAccess'
+            condition: EQUAL
+            value: 'Disabled'
+          - property: firewallRules
+            condition: ALL
+            value:
+              - property: startIpAddress
+                condition: DIFFERENT
+                value: '0.0.0.0'
+              - property: endIpAddress
+                operator: AND
+                criteria:
+                  - property: .
+                    condition: DIFFERENT
+                    value: '0.0.0.0'
+                  - property: .
+                    condition: DIFFERENT
+                    value: '255.255.255.255'
+    - name: "azure-sql-servers-encryption-protector-customer-managed-key"
+      description: "this rule is to ensure sql servers encryption protector is customer managed key"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlServers
+      conditions:
+        - property: encryptionProtectors
+          condition: ALL
+          value:
+            - property: kind
+              condition: EQUAL
+              value: 'azurekeyvault'
+            - property: serverKeyType
+              condition: DIFFERENT
+              value: 'AzureKeyVault'
+            - property: uri
+              condition: DIFFERENT
+              value: null
+    - name: "azure-sql-servers-entra-id-administrator"
+      description: "this rule is to ensure entra id authentication is configured for sql servers"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlServers
+      conditions:
+        - property: administrators.administratorType
+          condition: EQUAL
+          value: 'ActiveDirectory'
+        - property: administrators.azureADOnlyAuthentication
+          condition: EQUAL
+          value: true
+    - name: "azure-sql-servers-retention-more-than-90-days"
+      description: "this rule is to ensure sql servers audit logs retention is unlimited (0) or more than 90 days"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlServers
+      conditions:
+        - property: blobAuditingPolicies
+          condition: ALL
+          value:
+            - property: retentionDays
+              condition: REGEX
+              value: ^(0|[9][0-9]+)$
+            - property: state
+              condition: EQUAL
+              value: 'Enabled'
+    - name: "azure-sql-servers-auditing"
+      description: "this rule is to ensure sql servers auditing is enabled"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlServers
+      conditions:
+        - property: serverDevOpsAuditSettings
+          condition: ALL
+          value:
+            - property: state
+              condition: EQUAL
+              value: 'Enabled'
+        - property: blobAuditingPolicies
+          condition: ALL
+          value:
+            - property: state
+              condition: EQUAL
+              value: 'Enabled'
+    - name: "azure-sql-database-tde-enabled"
+      description: "this rule is to ensure sql databases transparentDataEncryptions is enabled"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.sqlDatabases
+      conditions:
+        - property: transparentDataEncryptions
+          condition: ALL
+          value:
+            - property: state
+              condition: EQUAL
+              value: 'Enabled'

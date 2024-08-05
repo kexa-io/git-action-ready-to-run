@@ -46,27 +46,6 @@
         - level: 3
           min: 1
   rules:
-    - name: "helm-chart-deployed"
-      description : "this rule is to verify if the helm chart is deployed"
-      applied: true
-      level: 1
-      cloudProvider: helm
-      objectName : chart
-      conditions:
-        - property : details.status
-          condition : EQUAL
-          value : deployed
-    - name: "helm-chart-last-deployed-X-month"
-      description : "this rule is to verify if the helm chart has been deployed in the last X month"
-      applied: true
-      level: 1
-      cloudProvider: helm
-      objectName : chart
-      conditions:
-        - property : details.lastDeployed
-          condition: DATE_INF
-          value: 0 0 0 0 0 3 0  # last 3 months
-          date: "YYYY-MM-DDThh:mm:ss.SSSZ"
     - name: "helm-chart-auto-scaling-enabled"
       description : "this rule is to verify if autoscaling is enabled"
       applied: true
@@ -112,46 +91,6 @@
             - property : details.computedValues.autoscaling.maxReplicas
               condition : SUP
               value : 10
-    - name: "helm-chart-auto-scaling-target-cpu"
-      description : "this rule is to verify if autoscaling target cpu  is not greater than 50"
-      applied: true
-      level: 0
-      cloudProvider: helm
-      objectName : chart
-      conditions:
-        - operator: NAND
-          criteria:
-            - property : details.computedValues.autoscaling
-              condition : DIFFERENT
-              value : null
-            - property : details.computedValues.autoscaling.targetCPU
-              condition : SUP
-              value : 50
-    - name: "helm-chart-auto-scaling-target-memory"
-      description : "this rule is to verify if autoscaling target memory is not greater than 50"
-      applied: true
-      level: 0
-      cloudProvider: helm
-      objectName : chart
-      conditions:
-        - operator: NAND
-          criteria:
-            - property : details.computedValues.autoscaling
-              condition : DIFFERENT
-              value : null
-            - property : details.computedValues.autoscaling.targetMemory
-              condition : SUP
-              value : 50
-    - name: "helm-chart-max-revisions"
-      description : "this rule is to verify if the helm chart has less than 10 revisions"
-      applied: true
-      level: 0
-      cloudProvider: helm
-      objectName : chart
-      conditions:
-        - property : details.revisions
-          condition : INF_OR_EQUAL
-          value : 10
     - name: "helm-chart-do-not-allow-empty-password"
       description : "this rule is to ensure that the helm chart does not allow empty passwords"
       applied: true

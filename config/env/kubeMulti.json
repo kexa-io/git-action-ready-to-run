@@ -4,14 +4,18 @@
             "description": "Kubernetes 1 Scan",
             "prefix": "KUB1_",
             "rules": [
-                "kubernetesTestRules"
+                "kubernetesStatus",
+                "kubernetesConfigurations",
+                "kubernetesConsumptions"
             ]
         },
         {
             "description": "Kubernetes 2 Scan",
             "prefix": "KUB2_",
             "rules": [
-                "kubernetesTestRules"
+                "kubernetesStatus",
+                "kubernetesConfigurations",
+                "kubernetesConsumptions"
             ]
         }
     ]
