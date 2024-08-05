@@ -233,6 +233,30 @@ For Kubernetes, you need to pass the content of your ".kube/config" directly in 
 <br/>
 </details>
 
+<details>
+  <summary>HTTP</summary>
+<br/>
+<div align="center">
+  <h3>
+
+  **───────── HTTP ─────────** 
+  </h3>
+</div>
+<br/>
+
+See specific configuration for HTTP : https://github.com/4urcloud/Kexa/blob/main/documentation/provider/HTTP.md
+
+**Ready to run for HTTP !**
+<br/>
+<div align="center">
+  <h3>
+
+  **─────────────────────────────────** 
+  </h3>
+</div>
+<br/>
+</details>
+
 
 <details>
   <summary>Github</summary>
@@ -453,6 +477,27 @@ If this interest you, please contact us at contact@4urcloud.eu
 
 ## 🛠️ 5. More configuration options
 
+<br/>
+
+### Enable/Disable rule & Set Alert level 
+
+Each rule can be individually disabled, and set to an alert level.<br/>
+Here is kexa alert level :<br/>
+- 0: Info
+- 1: Warning
+- 2: Error
+- 3: Fatal
+<br/><br/>
+To edit the alert level or disable/enable a rule, go to the rule file
+(for example: "rules/AzureAllRules.yaml"), search for the rule you want to modify.
+<br/><br/>
+Then you can edit the following field as you wish:
+<br/><br/>
+<div align="center">
+    <img src="readme-images/editrule.png" alt="Logo" height="auto">
+</div>
+
+<br/>
 <br/>
 
 ### Teams notifications
