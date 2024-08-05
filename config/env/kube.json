@@ -4,7 +4,9 @@
             "description": "Kubernetes unique Scan",
             "prefix": "KUB1_",
             "rules": [
-                "kubernetesAllRules"
+                "kubernetesStatus",
+                "kubernetesConfigurations",
+                "kubernetesConsumptions"
             ]
         }
     ]

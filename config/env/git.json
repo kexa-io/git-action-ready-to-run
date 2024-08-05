@@ -4,7 +4,7 @@
             "description": "Github Scan",
             "prefix": "GH1_",
             "rules": [
-                "githubAllRules"
+                "githubGlobal"
             ]
         }
     ]

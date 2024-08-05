@@ -1,0 +1,115 @@
+- version: 1.0.0
+  date: 08-02-2024
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    error:
+      enabled: true
+      type: 
+        - log
+        #- email
+        #- sms
+      to: 
+        - myEmail@gmail.com
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        - myEmail@gmail.com
+    global:
+      enabled: true
+      type: 
+        - log
+        #- webhook
+        #- sms
+        #- email
+      to: 
+        #- http://127.0.0.1:5000/test
+        - myEmail@gmail.com
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    - name: "azure-orphan-nsg"
+      description : "this rules is to check if nsg is orphan"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName : NetworkManagementClient.networkSecurityGroups
+      conditions:
+        - operator: OR
+          criteria:
+            - property : networkInterfaces
+              condition : COUNT_SUP_OR_EQUAL
+              value : 1
+            - property : subnets
+              condition : COUNT_SUP_OR_EQUAL
+              value : 1
+    - name: "Orphan virtualNetwork"
+      description : "this rules is to check if virtualNetwork is orphan"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName : NetworkManagementClient.virtualNetworks
+      conditions:
+        - property : subnets
+          condition : COUNT_SUP_OR_EQUAL
+          value : 1
+    - name: "azure-virtual-network-minimum-subnets"
+      description : "check if NSG have a minimum of subnets"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName : NetworkManagementClient.virtualNetworks
+      conditions: 
+        - property: subnets
+          condition: COUNT_SUP
+          value: 0
+    - name: "azure-network-rdp-access-resticted"
+      description: "this rule is to ensure web apps are using keyvault"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: NetworkManagementClient.networkSecurityGroups
+      conditions:
+        - property: defaultSecurityRules
+          condition: ALL
+          value:
+            - property: .
+              operator: NAND
+              criteria:
+                - property: access
+                  condition: EQUAL
+                  value: 'Allow'
+                - property: destinationPortRange
+                  condition: REGEX
+                  value: ^(3389|.*)$
+                - property: direction
+                  condition: EQUAL
+                  value: 'Inbound'
+                - property: protocol
+                  condition: REGEX
+                  value: ^(TCP|.*)$
+                - property: sourceAddressPrefix
+                  condition: REGEX
+                  value: ^(*|0.0.0.0|<nw>/0|/0|internet|any|AzureLoadBalancer)$

@@ -1,0 +1,75 @@
+- version: 1.0.0
+- version: 1.0.0
+  date: 08-02-2024
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    error:
+      enabled: true
+      type: 
+        - log
+        #- email
+        #- sms
+      to: 
+        - myEmail@gmail.com
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        - myEmail@gmail.com
+    global:
+      enabled: true
+      type: 
+        - log
+        #- webhook
+        #- sms
+        #- email
+      to: 
+        #- http://127.0.0.1:5000/test
+        - myEmail@gmail.com
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    # pods memory % consumption alert
+    - name: "kube-pods-memory-limitation"
+      description : "this rules is to verify pods memory limitation"
+      applied: false
+      level: 2
+      cloudProvider: kubernetes
+      objectName : podsConsumption
+      conditions:
+        - property : MemoryUsage
+          condition : INF
+          value: 599428096
+    # pods CPU % consumption alert
+    - name: "kube-pods-cpu-limitation"
+      description : "this rules is to verify cpu usage limitation"
+      applied: true
+      level: 0
+      cloudProvider: kubernetes
+      objectName : podsConsumption
+      conditions:
+        - property : CPUUsage
+          condition : INF
+          value: 0.02

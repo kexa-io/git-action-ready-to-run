@@ -4,7 +4,9 @@
             "description": "AWS Scan",
             "prefix": "AWS1_",
             "rules": [
-                "awsAllRules"
+                "awsS3",
+                "awsEC2",
+                "awsIAM"
             ]
         }
     ]

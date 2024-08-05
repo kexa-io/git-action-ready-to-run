@@ -4,7 +4,7 @@
             "description": "Azure Scan",
             "prefix": "AZ1_",
             "rules": [
-                "o365AllRules"
+                "o365Global"
             ]
         }
     ]

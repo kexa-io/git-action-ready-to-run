@@ -4,7 +4,9 @@
             "description": "Helm Scan",
             "prefix": "KUB1_",
             "rules": [
-                "helmAllRules"
+                "helmStatus",
+                "helmConfigurations",
+                "helmConsumptions"
             ]
         }
     ]
