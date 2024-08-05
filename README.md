@@ -105,7 +105,7 @@ From your provider, retrieve the following credentials :<br/><br/>
 - *SUBSCRIPTIONID*
 
 Set each variable in your github repository secret with the prefix "*AZ1_*"
-Prefix is defined in "*/config/azure.json*"
+Prefix is defined in "*/config/env/azure.json*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -142,7 +142,7 @@ credentials as values:
 - *AWS_SECRET_ACCESS_KEY*
 
 Set each variable in your github repository secret with the prefix "*AWS1_*"
-Prefix is defined in "*/config/aws.json*"
+Prefix is defined in "*/config/env/aws.json*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -178,7 +178,7 @@ From your provider, retrieve the following credentials :<br/><br/>
 - *GOOGLE_APPLICATION_CREDENTIALS*
 
 Set each variable in your github repository secret with the prefix "*GCP1_*"
-Prefix is defined in "*/config/gcp.json*" and in "*/.github/workflows/gcp.yml*"
+Prefix is defined in "*/config/env/gcp.json*" and in "*/.github/workflows/gcp.yml*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -213,7 +213,7 @@ From your provider, retrieve the following credentials :<br/><br/>
 - *KUBECONFIG* (content of ".kube/config")
 
 Set each variable in your github repository secret with the prefix "*KUB1_*"
-Prefix is defined in "*/config/kube.json*" and in "*/.github/workflows/kube.yml*"
+Prefix is defined in "*/config/env/kube.json*" and in "*/.github/workflows/kube.yml*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -273,7 +273,7 @@ From your provider, retrieve the following credentials :<br/><br/>
 - *GITHUBTOKEN*
 
 Set each variable in your github repository secret with the prefix "*GH1_*"
-Prefix is defined in "*/config/git.json*".
+Prefix is defined in "*/config/env/git.json*".
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -310,7 +310,7 @@ From your provider, retrieve the following credentials :<br/><br/>
 - *KUBECONFIG* (content of ".kube/config")
 
 Set each variable in your github repository secret with the prefix "*KUB1_*"
-Prefix is defined in "*/config/helm.json*" and in "*/.github/workflows/helm.yml*"
+Prefix is defined in "*/config/env/helm.json*" and in "*/.github/workflows/helm.yml*"
 
 So you will have in your github secrets the following variable with the corresponding
 credentials as values:
@@ -495,6 +495,21 @@ Then you can edit the following field as you wish:
 <br/><br/>
 <div align="center">
     <img src="readme-images/editrule.png" alt="Logo" height="auto">
+</div>
+
+<br/>
+<br/>
+
+### Choosing rule files to use 
+
+For each addon there is a configuration file located in "*/config/env*" as a JSON.
+In this file you can define multiple project (refer to the end of this readme), and for each
+project you can choose which rule files (in "*/rules/*") to use defined as a list of file names.
+
+For example, here we are using "*awsS3*", "*awsEC2*" and "*awsIAM*" files for the AWS addon in "*/config/env/aws.json*"
+
+<div align="center">
+    <img src="readme-images/aws_config.png" alt="Logo" height="auto">
 </div>
 
 <br/>
