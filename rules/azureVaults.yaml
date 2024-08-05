@@ -1,0 +1,112 @@
+- version: 1.0.0
+  date: 08-02-2024
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    error:
+      enabled: true
+      type: 
+        - log
+        #- email
+        #- sms
+      to: 
+        - myEmail@gmail.com
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        - myEmail@gmail.com
+    global:
+      enabled: true
+      type: 
+        - log
+        #- webhook
+        #- sms
+        #- email
+      to: 
+        #- http://127.0.0.1:5000/test
+        - myEmail@gmail.com
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    - name: "azure-vault-no-public-network-access"
+      description: "this rule is to ensure vault network public access is disabled"
+      applied: true
+      level: 3
+      cloudProvider: azure
+      objectName: KexaAzure.vaults
+      conditions:
+        - property: properties.publicNetworkAccess
+          condition: EQUAL
+          value: 'Disabled'
+    - name: "azure-ensure-rbac-enabled"
+      description: "this rule is to ensure rbac is enabled for kayvaults"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.vaults
+      conditions:
+        - property: properties.enableRbacAuthorization
+          condition: EQUAL
+          value: true
+    - name: "azure-ensure-keyvault-recoverable"
+      description: "this rule is to ensure keyvaults are recoverable"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.vaults
+      conditions:
+        - property: properties.enablePurgeProtection
+          condition: EQUAL
+          value: true
+    - name: "azure-secrets-ensure-expiration"
+      description: "this rule is to ensure every secrets has an expiration date"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.secrets
+      conditions:
+        - property: properties.attributes.expires
+          condition: DIFFERENT
+          value: null
+    - name: "azure-vault-keys-rotation"
+      description: "this rule is to ensure every keys has a rotation defined"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.KeyvaultKeys
+      conditions:
+        - property: properties.rotationPolicy
+          condition: DIFFERENT
+          value: null
+    - name: "azure-vault-keys-expiration-date"
+      description: "this rule is to ensure every keys has a expiration date"
+      applied: true
+      level: 2
+      cloudProvider: azure
+      objectName: KexaAzure.KeyvaultKeys
+      conditions:
+        - property: properties.attributes.expires
+          condition: DIFFERENT
+          value: null

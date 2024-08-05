@@ -4,7 +4,14 @@
             "description": "Azure Scan",
             "prefix": "AZ1_",
             "rules": [
-                "azureAllRules"
+                "azureGlobal",
+                "azureApps",
+                "azureContainers",
+                "azureDatabases",
+                "azureNetworks",
+                "azureVaults",
+                "azureStorages",
+                "azureVirtualMachines"
             ]
         }
     ]

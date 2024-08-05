@@ -4,7 +4,7 @@
             "description": "organization Scan",
             "prefix":"HTTP1_",
             "rules": [
-                "httpTestRules"
+                "httpGlobal"
             ],
             "URL": [
                 "https://www.google.com"

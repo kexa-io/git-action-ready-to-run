@@ -50,13 +50,16 @@
         - level: 3
           min: 1
   rules:
-    - name: "Is Drive addon working in Action"
-      description : "This rule must raise an info alert if the Drive addon is working"
+    - name: "aks-has-scaleSet"
+      description : "check if aks have a scaleSet"
       applied: true
       level: 0
-      cloudProvider: googleDrive
-      objectName : files
-      conditions:
-        - property: name
-          condition: REGEX
-          value: /^(dzqdzqqzdzqddqdzfAFZEFzepkfenaaeodauhAIZGAYDGAZUZYDAUZFDUAZDF)\s[A-Za-z]+/
+      cloudProvider: azure
+      objectName : ContainerServiceClient.managedClusters
+      conditions: 
+        - property: agentPoolProfiles
+          condition: ALL
+          value: 
+            - property: scaleSetEvictionPolicy
+              condition: EQUAL
+              value: Delete

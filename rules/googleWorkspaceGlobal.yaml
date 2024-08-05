@@ -53,7 +53,7 @@
     - name: "workspace-user-mfa-activated"
       description: "verify if mfa is activated on user account"
       applied: true
-      level: 2
+      level: 1
       cloudProvider: googleWorkspace
       objectName: user
       conditions:
@@ -63,7 +63,7 @@
     - name: "workspace-user-mfa-enforced"
       description: "verify if mfa is enforced for user account"
       applied: true
-      level: 2
+      level: 1
       cloudProvider: googleWorkspace
       objectName: user
       conditions:
@@ -72,8 +72,8 @@
           value: true
     - name: "workspace-user-change-passwd-next-login"
       description: "verify if there is at least one super admin for OU"
-      applied: true
-      level: 2
+      applied: false
+      level: 1
       cloudProvider: googleWorkspace
       objectName: user
       conditions:
@@ -83,7 +83,7 @@
     - name: "workspace-at-least-one-super-admin"
       description: "verify if there is at least one super admin for OU"
       applied: true
-      level: 2
+      level: 1
       cloudProvider: googleWorkspace
       objectName: user
       conditions:

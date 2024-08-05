@@ -1,0 +1,242 @@
+- version: 1.0.0
+  date: 08-02-2024
+  alert:
+    fatal:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    error:
+      enabled: true
+      type: 
+        - log
+        #- email
+        #- sms
+      to: 
+        - myEmail@gmail.com
+    warning:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to:
+        - myEmail@gmail.com
+    info:
+      enabled: true
+      type: 
+        - log
+        #- email
+      to: 
+        - myEmail@gmail.com
+    global:
+      enabled: true
+      type: 
+        - log
+        #- webhook
+        #- sms
+        #- email
+      to: 
+        #- http://127.0.0.1:5000/test
+        - myEmail@gmail.com
+      conditions:
+        - level: 0
+          min: 1
+        - level: 1
+          min: 1
+        - level: 2
+          min: 1
+        - level: 3
+          min: 1
+  rules:
+    - name: "azure-global-ensure-trusted-locations-defined"
+      description: "this rule is to ensure trusted locations are defined for azure ad authentication"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.namedLocations
+      conditions:
+        - operator: NAND
+          criteria:
+            - property: dataType
+              condition: EQUAL
+              value: '#microsoft.graph.ipNamedLocation'
+            - operator: OR
+              criteria:
+                - property: isTrusted
+                  condition: DIFFERENT
+                  value: true
+                - property: ipRanges
+                  condition: EQUAL
+                  value: null
+    - name: "azure-global-security-default-enabled"
+      description: "this rule is to ensure security defaults are enabled"
+      applied: true
+      level: 2
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: identitySecurityDefaultsEnforcementPolicy.isEnabled
+          condition: EQUAL
+          value: true
+    - name: "azure-global-user-cannot-create-tenant"
+      description: "this rule is to ensure user cannot create tenant"
+      applied: true
+      level: 2
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authorizationPolicy.defaultUserRolePermissions.allowedToCreateTenants
+          condition: DIFFERENT
+          value: true
+    - name: "azure-global-ensure-mfa-for-all-users"
+      description: "this rule is to ensure MFA is enabled for all users"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authenticationMethodsPolicy.registrationEnforcement.authenticationMethodsRegistrationCampaign.state
+          condition: EQUAL
+          value: 'enabled'
+        - property: authenticationMethodsPolicy.registrationEnforcement.authenticationMethodsRegistrationCampaign.includeTargets
+          condition: SOME
+          value:
+            - property: id
+              condition: EQUAL
+              value: 'all_users'
+            - property: targetedAuthenticationMethod
+              condition: EQUAL
+              value: 'microsoftAuthenticator'
+            - property: targetType
+              condition: EQUAL
+              value: 'group'
+    - name: "azure-global-ensure-mfa-for-all-adminstrative-groups"
+      description: "this rule is to ensure MFA is enabled for adminstrative groups"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authenticationMethodsPolicy.registrationEnforcement.authenticationMethodsRegistrationCampaign.state
+          condition: EQUAL
+          value: 'enabled'
+        - property: authenticationMethodsPolicy.registrationEnforcement.authenticationMethodsRegistrationCampaign.includeTargets
+          condition: SOME
+          value:
+            - property: id
+              condition: EQUAL
+              value: 'admins'
+            - property: targetedAuthenticationMethod
+              condition: EQUAL
+              value: 'microsoftAuthenticator'
+            - property: targetType
+              condition: EQUAL
+              value: 'group'
+    - name: "azure-global-enforce-microsoft-authenticator-config"
+      description: "this rule is to ensure MFA is enforced"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authenticationMethodsPolicy.authenticationMethodConfigurations
+          condition: SOME
+          value:
+            - operator: AND
+              criteria:
+                - property: id
+                  condition: EQUAL
+                  value: MicrosoftAuthenticator'
+                - property: keyRestrictions.isEnforced
+                  condition: EQUAL
+                  value: true
+    - name: "azure-global-user-cannot-create-security-group"
+      description: "this rule is to ensure user cannot create security group"
+      applied: true
+      level: 2
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authorizationPolicy.defaultUserRolePermissions.allowedToCreateSecurityGroups
+          condition: DIFFERENT
+          value: true
+    - name: "azure-global-user-cannot-create-apps"
+      description: "this rule is to ensure user cannot create apps"
+      applied: true
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: authorizationPolicy.defaultUserRolePermissions.allowedToCreateApps
+          condition: DIFFERENT
+          value: true
+    - name: "azure-global-ensure-reviewers"
+      description: "this rule is to ensure that reviewers are defined and enabled"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.policies
+      conditions:
+        - property: adminConsentRequestPolicy.isEnabled
+          condition: EQUAL
+          value: true
+        - property: reviewers
+          condition: COUNT_SUP_OR_EQUAL
+          value: 1
+    - name: "azure-global-guest-user-review"
+      description: "this rule is to retrieve all guest users and review them"
+      applied: false
+      level: 0
+      cloudProvider: azure
+      objectName: KexaAzure.users
+      conditions:
+        - property: userType
+          condition: DIFFERENT
+          value: 'Guest'
+    - name: "azure-global-ensure-az-policy-mfa-admins"
+      description: "this rule is to ensure MFA is enabled for adminstrative groups"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.conditionnalAccess
+      conditions:
+        - property: policies
+          condition: SOME
+          value:
+            - property: templateId
+              condition: EQUAL
+              value: 'c7503427-338e-4c5e-902d-abe252abfb43'
+            - property: state
+              condition: EQUAL
+              value: 'enabledForReportingButNotEnforced'
+    - name: "azure-global-ensure-az-policy-mfa-all-users"
+      description: "this rule is to ensure MFA is enabled for all users"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.conditionnalAccess
+      conditions:
+        - property: policies
+          condition: SOME
+          value:
+            - property: templateId
+              condition: EQUAL
+              value: 'a3d0a415-b068-4326-9251-f9cdf9feeb64'
+            - property: state
+              condition: EQUAL
+              value: 'enabled'
+    - name: "azure-global-ensure-az-policy-mfa-azure-service-mgmt"
+      description: "this rule is to ensure MFA is enabled for azure service management"
+      applied: false
+      level: 1
+      cloudProvider: azure
+      objectName: KexaAzure.conditionnalAccess
+      conditions:
+        - property: templateId
+          condition: EQUAL
+          value: 'd8c51a9a-e6b1-454d-86af-554e7872e2c1'
+        - property: state
+          condition: EQUAL
+          value: 'enabled'

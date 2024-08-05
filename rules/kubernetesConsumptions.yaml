@@ -1,4 +1,5 @@
 - version: 1.0.0
+- version: 1.0.0
   date: 08-02-2024
   alert:
     fatal:
@@ -50,13 +51,25 @@
         - level: 3
           min: 1
   rules:
-    - name: "Is Office 365 addon working in Action"
-      description: "This rule must raise an info alert if the Office 365 addon is working"
+    # pods memory % consumption alert
+    - name: "kube-pods-memory-limitation"
+      description : "this rules is to verify pods memory limitation"
+      applied: false
+      level: 2
+      cloudProvider: kubernetes
+      objectName : podsConsumption
+      conditions:
+        - property : MemoryUsage
+          condition : INF
+          value: 599428096
+    # pods CPU % consumption alert
+    - name: "kube-pods-cpu-limitation"
+      description : "this rules is to verify cpu usage limitation"
       applied: true
       level: 0
-      cloudProvider: o365
-      objectName: sku
+      cloudProvider: kubernetes
+      objectName : podsConsumption
       conditions:
-        - property: consumedUnits
-          condition: SUP
-          value: 9000000
+        - property : CPUUsage
+          condition : INF
+          value: 0.02
