@@ -1,8 +1,10 @@
 name: Schedule Trigger All Providers
 
+#on:
+#  schedule:
+#    - cron: '0 12 * * *'   # every day at noon
 on:
-  schedule:
-    - cron: '0 12 * * *'   # every day at noon
+  workflow_dispatch:
   
 jobs:
   deploy:
