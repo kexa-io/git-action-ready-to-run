@@ -447,6 +447,21 @@ You will see the list of alerts with the level, resources ID and rule name and d
 </div>
 <br/>
 
+### Jira issues
+
+<br/>
+By setting up 'Jira' notifications, you will receive alerts as issues in a desired Kanban, this will allow you to track and manage your optimization, security or compliance problems.<br/><br/>
+
+To configure this, refer to the next section.<br/>
+
+<br/>
+Here is an example of a Kanban, additionally, by clicking on a alert, you will see all the resource informations for remediation.
+<br/><br/>
+<div align="center">
+    <img src="readme-images/jiraresults.png" alt="Logo" height="400">
+</div>
+<br/>
+
 ### Microsoft Teams
 
 <br/>
@@ -576,6 +591,10 @@ Last thing to do is in your rule file, in the notification section, set Jira wit
 <div align="center">
     <img src="readme-images/ruleconfigjira.png" alt="Logo" height="auto">
 </div>
+
+You're ready !
+
+For further informations and notification channel, refer to the Kexa documenation : [Kexa/documentation/Documentation-Kexa.md at main · 4urcloud/Kexa (github.com)](https://github.com/4urcloud/Kexa/blob/main/documentation/Documentation-Kexa.md) (⭐ Star us on 4urcloud/Kexa if you like this project !)
 
 
 <br/>
