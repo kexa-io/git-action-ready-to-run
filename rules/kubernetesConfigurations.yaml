@@ -50,6 +50,34 @@
         - level: 3
           min: 1
   rules:
+
+    - name: "kube-pods-cpu-limit-request-set"
+      description : "this rules is to verify cpu limit and request are set"
+      applied: true
+      level: 1
+      cloudProvider: kubernetes
+      objectName : podsConsumption
+      conditions:
+        - property : MemoryLimitTotal
+          condition : DIFFERENT
+          value: 0
+        - property : MemoryRequestTotal
+          condition : DIFFERENT
+          value: 0
+    - name: "kube-pods-memory-limit-request-set"
+      description : "this rules is to verify memory limit and request are set"
+      applied: true
+      level: 1
+      cloudProvider: kubernetes
+      objectName : podsConsumption
+      conditions:
+        - property : CPULimitTotal
+          condition : DIFFERENT
+          value: 0
+        - property : CPURequestTotal
+          condition : DIFFERENT
+          value: 0
+          
     - name: "kube-horizontal-pod-autoscaler-min-max-replicas"
       description : "this rules is to verify horizontal pod autoscaler min and max replicas"
       applied: true
