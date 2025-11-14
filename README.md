@@ -342,7 +342,7 @@ For Helm, you need to pass the content of your ".kube/config" directly in the Gi
 </div>
 <br/>
   
-* tuto here *
+Use same credentials as Azure.
 
 <br/>
 <div align="center">

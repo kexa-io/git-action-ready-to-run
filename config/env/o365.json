@@ -1,5 +1,5 @@
 {
-    "azure":[
+    "o365":[
         {
             "description": "Azure Scan",
             "prefix": "AZ1_",
