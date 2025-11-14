@@ -18,7 +18,7 @@ jobs:
         shell: bash
 
       - name: Run Kexa Action
-        uses: 4urcloud/Kexa_githubAction@1.8.2
+        uses: kexa-io/git-action@1.8.6-stable
         id: kexa
         with:
           ENV_VARS: |
