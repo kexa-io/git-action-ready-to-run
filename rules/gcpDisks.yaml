@@ -63,7 +63,7 @@
         - property: status
           condition: DIFFERENT
           value: 'TERMINATED'
-    
+
     - name: "gcp-compute-instance-untagged"
       description: "Detect compute instances without required labels (env, owner, cost-center)"
       applied: true
@@ -90,7 +90,7 @@
             - property: scheduling.preemptible
               condition: EQUAL
               value: true
-    
+
     - name: "gcp-compute-instance-invalid-region"
       description: "Verify compute instance is in allowed regions"
       applied: false
@@ -105,7 +105,7 @@
             - 'us-central1-b'
             - 'us-east1-b'
             - 'europe-west1-b'
-    
+
     - name: "gcp-compute-instance-old-creation"
       description: "Detect instances created more than 180 days ago for review"
       applied: true
